@@ -1,23 +1,9 @@
-import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Counter from "./components/Counter";
+import InputValue from "./components/InputValue";
 
 function App() {
-  const [likes, setLikes] = useState(0);
-  const [value, setValue] = useState("test text");
-
-  function increment() {
-    setLikes(likes + 1);
-  }
-
-  function decrement() {
-    setLikes(likes - 1);
-  }
-
-  function inputHandler(e) {
-    setValue(e.target.value);
-  }
-
   return (
     <div className="App">
       <header className="App-header">
@@ -39,26 +25,9 @@ function App() {
       </header>
 
       <main>
-        <h2>{likes}</h2>
+        <Counter />
 
-        <p>
-          <button onClick={increment} className="btn-1">
-            Increment
-          </button>
-          <button onClick={decrement} className="btn-1">
-            Decrement
-          </button>
-        </p>
-
-        <h2>{value}</h2>
-        <p>
-          <input
-            type="text"
-            onChange={inputHandler}
-            defaultValue={value}
-            className="input"
-          ></input>
-        </p>
+        <InputValue />
       </main>
     </div>
   );
