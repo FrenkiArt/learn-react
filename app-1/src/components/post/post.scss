@@ -1,0 +1,40 @@
+.post {
+  padding: 15px;
+  display: flex;
+  border: 2px solid green;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+
+  // .post__content
+  &__content {
+    text-align: left;
+  }
+
+  // .post__title
+  &__title {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  // .post__descr
+  &__descr {
+    position: relative;
+  }
+
+  // .post__btns
+  &__btns {
+    position: relative;
+  }
+
+  // .post__btn
+  &__btn {
+    position: relative;
+    cursor: pointer;
+  }
+
+  // .post__btn--remove
+  &__btn--remove {
+    position: relative;
+  }
+}

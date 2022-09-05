@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Counter from "./components/counter/Counter";
 import InputValue from "./components/InputValue";
+import Post from "./components/post/Post";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         <Counter />
 
         <InputValue />
+
+        <Post />
+        <Post />
       </main>
     </div>
   );
