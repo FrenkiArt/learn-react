@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "./counter.css";
 
 const Counter = () => {
   const [likes, setLikes] = useState(0);
@@ -12,7 +13,7 @@ const Counter = () => {
   }
 
   return (
-    <div>
+    <div className="counter">
       <h2>{likes}</h2>
 
       <p>
