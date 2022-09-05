@@ -1,10 +1,18 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { useState } from "react";
 import Counter from "./components/counter/Counter";
 import InputValue from "./components/InputValue";
-import Post from "./components/post/Post";
+import Posts from "./components/posts/Posts";
 
 function App() {
+  const [posts, setPosts] = useState([
+    { id: 1, title: "New title", descr: "New description" },
+    { id: 2, title: "New title", descr: "New description" },
+    { id: 3, title: "New title", descr: "New description" },
+    { id: 4, title: "New title", descr: "New description" },
+  ]);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -30,8 +38,9 @@ function App() {
 
         <InputValue />
 
-        <Post />
-        <Post />
+        <Posts posts={posts} title="Новый список постов" />
+
+        <hr />
       </main>
     </div>
   );

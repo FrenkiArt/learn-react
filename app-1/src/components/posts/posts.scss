@@ -1,0 +1,13 @@
+.posts {
+  // .posts__title
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  // .posts__item
+  &__item {
+    position: relative;
+  }
+}
