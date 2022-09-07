@@ -8,6 +8,7 @@ const Post = (props) => {
       <div className="post__content">
         <div className="post__title">
           {props.post.id + ". " || ""}
+          {/* {props.number} */}
           {props.post.title || "Title"}
         </div>
         <div className="post__descr">{props.post.descr || "Description"}</div>

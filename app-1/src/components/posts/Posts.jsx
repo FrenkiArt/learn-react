@@ -7,8 +7,8 @@ const Posts = (props) => {
     <div className="posts">
       <div className="posts__title">{props.title || "Список постов"}</div>
 
-      {props.posts.map((post) => {
-        return <Post post={post} key={post.id} />;
+      {props.posts.map((post, index) => {
+        return <Post number={index + 1} post={post} key={post.id} />;
       })}
     </div>
   );

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Counter from "./components/counter/Counter";
 import InputValue from "./components/InputValue";
 import Posts from "./components/posts/Posts";
+import Form from "./components/form/Form";
 
 function App() {
   const [posts, setPosts] = useState([
@@ -12,6 +13,15 @@ function App() {
     { id: 3, title: "New title", descr: "New description" },
     { id: 4, title: "New title", descr: "New description" },
   ]);
+
+  const makeNewIdForPost = () => {
+    return posts.length + 1;
+  };
+
+  const addPost = (newPost) => {
+    setPosts([...posts, { ...newPost, id: makeNewIdForPost() }]);
+    console.log("Пост добавлен!");
+  };
 
   return (
     <div className="App">
@@ -39,6 +49,8 @@ function App() {
         <InputValue />
 
         <Posts posts={posts} title="Новый список постов" />
+
+        <Form addPost={addPost} makeNewIdForPost={makeNewIdForPost} />
 
         <hr />
       </main>

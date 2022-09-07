@@ -1,0 +1,21 @@
+.myBtn {
+  padding: 0.5rem 1rem;
+  color: teal;
+  font-size: 1rem;
+  background-color: white;
+  border: 2px solid teal;
+  cursor: pointer;
+  font-weight: 700;
+  // width: 100%;
+
+  &:hover,
+  &.hover {
+    filter: hue-rotate(60deg);
+  }
+
+  &:disabled,
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}

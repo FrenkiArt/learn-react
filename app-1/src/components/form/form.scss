@@ -1,0 +1,16 @@
+.form {
+  border: 2px dashed teal;
+  margin-top: 15px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 15px;
+  box-sizing: border-box;
+
+  // .form__item
+  &__item {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+  }
+}
