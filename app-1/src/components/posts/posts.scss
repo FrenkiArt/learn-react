@@ -11,3 +11,18 @@
     position: relative;
   }
 }
+
+.wrap-post-enter {
+  opacity: 0;
+}
+.wrap-post-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.wrap-post-exit {
+  opacity: 1;
+}
+.wrap-post-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
