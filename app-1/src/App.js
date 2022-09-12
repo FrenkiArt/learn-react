@@ -11,10 +11,15 @@ import MyButton from "./components/UI/button/MyButton";
 import { usePosts } from "./hooks/usePosts";
 import PostService from "./API/PostService";
 import Loader from "./components/UI/Loader/Loader";
+import { useFetching } from "./hooks/useFetching";
 
 function App() {
   const [posts, setPosts] = useState([]);
-  const [isPostsLoading, setIsPostsLoading] = useState(false);
+  const [fetchPosts, isPostsLoading, postError] = useFetching(async () => {
+    const posts = await PostService.getAll();
+    setPosts(posts);
+  });
+
   const [filter, setFilter] = useState({ sort: "", query: "" });
   const [modal, setModal] = useState(false);
   const sortedAndSearchedPosts = usePosts(posts, filter.sort, filter.query);
@@ -33,13 +38,6 @@ function App() {
     setPosts(posts.filter((item) => item.id !== post.id));
     console.log("Пост  удалён!");
   };
-
-  async function fetchPosts() {
-    setIsPostsLoading(true);
-    const posts = await PostService.getAll();
-    setPosts(posts);
-    setIsPostsLoading(false);
-  }
 
   useEffect(() => {
     fetchPosts();
@@ -86,6 +84,7 @@ function App() {
 
         <PostFilter filter={filter} setFilter={setFilter} />
 
+        {postError && <h2>Произошла ошибка {postError}</h2>}
         {isPostsLoading ? (
           <Loader />
         ) : (
