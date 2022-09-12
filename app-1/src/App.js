@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Counter from "./components/counter/Counter";
 import InputValue from "./components/InputValue";
 import Posts from "./components/posts/Posts";
 import Form from "./components/form/Form";
-import MySelect from "./components/UI/select/MySelect";
+import PostFilter from "./components/post-filter/PostFilter";
 
 function App() {
   const [posts, setPosts] = useState([
@@ -15,7 +15,7 @@ function App() {
     { id: 4, title: "FFF title", descr: "FFF description" },
   ]);
 
-  const [selectedSort, setSelectedsort] = useState("");
+  const [filter, setFilter] = useState({ sort: "", query: "" });
 
   const makeNewIdForPost = () => {
     return posts.length + 1;
@@ -31,16 +31,28 @@ function App() {
     console.log("Пост  удалён!");
   };
 
-  const sortPosts = (sort) => {
-    console.log(sort);
-    setSelectedsort(sort);
-
-    if (Number(sort === "id")) {
-      setPosts([...posts.sort((a, b) => a.id - b.id)]);
+  const sortedPosts = useMemo(() => {
+    console.log("getSortedPosts()");
+    if (filter.sort) {
+      if (filter.sort === "id") {
+        return [...posts.sort((a, b) => a.id - b.id)];
+      } else {
+        return [...posts].sort((a, b) =>
+          a[filter.sort].localeCompare(b[filter.sort])
+        );
+      }
     } else {
-      setPosts([...posts].sort((a, b) => a[sort].localeCompare(b[sort])));
+      return posts;
     }
-  };
+  }, [filter.sort, posts]);
+
+  const sortedAndSearchedPosts = useMemo(() => {
+    return sortedPosts.filter(
+      (post) =>
+        post.title.toLowerCase().includes(filter.query) ||
+        post.descr.toLowerCase().includes(filter.query)
+    );
+  }, [filter.query, sortedPosts]);
 
   return (
     <div className="App">
@@ -67,25 +79,14 @@ function App() {
 
         <InputValue />
 
-        <div>
-          <MySelect
-            value={selectedSort}
-            onChange={sortPosts}
-            defaultValue="Сортировка"
-            options={[
-              { value: "title", name: "Сортировка по названию" },
-              { value: "descr", name: "Сортировка по описанию" },
-              { value: "id", name: "Сортировка по номеру" },
-            ]}
-          />
-        </div>
+        <PostFilter filter={filter} setFilter={setFilter} />
 
         <hr />
 
-        {posts.length !== 0 ? (
+        {sortedAndSearchedPosts.length !== 0 ? (
           <Posts
             removePost={removePost}
-            posts={posts}
+            posts={sortedAndSearchedPosts}
             title="Новый список постов"
           />
         ) : (
