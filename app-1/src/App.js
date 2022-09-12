@@ -10,15 +10,11 @@ import MyModal from "./components/MyModal/MyModal";
 import MyButton from "./components/UI/button/MyButton";
 import { usePosts } from "./hooks/usePosts";
 import PostService from "./API/PostService";
+import Loader from "./components/UI/Loader/Loader";
 
 function App() {
-  const [posts, setPosts] = useState([
-    { id: 1, title: "New title", body: "New description" },
-    { id: 2, title: "AAA title", body: "AAA description" },
-    { id: 3, title: "Ddd title", body: "DDD description" },
-    { id: 4, title: "FFF title", body: "FFF description" },
-  ]);
-
+  const [posts, setPosts] = useState([]);
+  const [isPostsLoading, setIsPostsLoading] = useState(false);
   const [filter, setFilter] = useState({ sort: "", query: "" });
   const [modal, setModal] = useState(false);
   const sortedAndSearchedPosts = usePosts(posts, filter.sort, filter.query);
@@ -39,9 +35,10 @@ function App() {
   };
 
   async function fetchPosts() {
+    setIsPostsLoading(true);
     const posts = await PostService.getAll();
-
     setPosts(posts);
+    setIsPostsLoading(false);
   }
 
   useEffect(() => {
@@ -89,11 +86,15 @@ function App() {
 
         <PostFilter filter={filter} setFilter={setFilter} />
 
-        <Posts
-          removePost={removePost}
-          posts={sortedAndSearchedPosts}
-          title="Новый список постов"
-        />
+        {isPostsLoading ? (
+          <Loader />
+        ) : (
+          <Posts
+            removePost={removePost}
+            posts={sortedAndSearchedPosts}
+            title="Новый список постов"
+          />
+        )}
 
         <hr />
       </main>
