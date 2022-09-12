@@ -1,6 +1,6 @@
 .form {
   border: 2px dashed teal;
-  margin-top: 15px;
+
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -12,5 +12,10 @@
     margin-bottom: 10px;
     width: 100%;
     text-align: left;
+  }
+
+  // .form__item:last-of-type
+  .form__item:last-of-type {
+    margin-bottom: 0;
   }
 }

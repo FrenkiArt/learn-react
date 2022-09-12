@@ -6,6 +6,8 @@ import InputValue from "./components/InputValue";
 import Posts from "./components/posts/Posts";
 import Form from "./components/form/Form";
 import PostFilter from "./components/post-filter/PostFilter";
+import MyModal from "./components/MyModal/MyModal";
+import MyButton from "./components/UI/button/MyButton";
 
 function App() {
   const [posts, setPosts] = useState([
@@ -16,6 +18,7 @@ function App() {
   ]);
 
   const [filter, setFilter] = useState({ sort: "", query: "" });
+  const [modal, setModal] = useState(false);
 
   const makeNewIdForPost = () => {
     return posts.length + 1;
@@ -23,6 +26,7 @@ function App() {
 
   const addPost = (newPost) => {
     setPosts([...posts, { ...newPost, id: makeNewIdForPost() }]);
+    setModal(false);
     console.log("Пост добавлен!");
   };
 
@@ -79,9 +83,17 @@ function App() {
 
         <InputValue />
 
-        <PostFilter filter={filter} setFilter={setFilter} />
+        <p>
+          <MyButton
+            onClick={() => {
+              setModal(true);
+            }}
+          >
+            Создать пост
+          </MyButton>
+        </p>
 
-        <hr />
+        <PostFilter filter={filter} setFilter={setFilter} />
 
         <Posts
           removePost={removePost}
@@ -89,10 +101,12 @@ function App() {
           title="Новый список постов"
         />
 
-        <Form addPost={addPost} makeNewIdForPost={makeNewIdForPost} />
-
         <hr />
       </main>
+
+      <MyModal visible={modal} setVisible={setModal}>
+        <Form addPost={addPost} makeNewIdForPost={makeNewIdForPost} />
+      </MyModal>
     </div>
   );
 }
