@@ -12,17 +12,29 @@ import { usePosts } from "./hooks/usePosts";
 import PostService from "./API/PostService";
 import Loader from "./components/UI/Loader/Loader";
 import { useFetching } from "./hooks/useFetching";
+import { getPageCount, getPagesArray } from "./utils/pages";
+import MyPagination from "./components/UI/MyPagination/MyPagination";
 
 function App() {
   const [posts, setPosts] = useState([]);
   const [fetchPosts, isPostsLoading, postError] = useFetching(async () => {
-    const posts = await PostService.getAll();
-    setPosts(posts);
+    const response = await PostService.getAll(limit, page);
+    setPosts(response.data);
+    const totalCount = response.headers["x-total-count"];
+    setTotalPages(getPageCount(totalCount, limit));
   });
 
   const [filter, setFilter] = useState({ sort: "", query: "" });
   const [modal, setModal] = useState(false);
   const sortedAndSearchedPosts = usePosts(posts, filter.sort, filter.query);
+  const [totalPages, setTotalPages] = useState(0);
+  const [limit, setLimit] = useState(10);
+  const [page, setPage] = useState(1);
+
+  console.log(totalPages);
+  let pagesArray = getPagesArray(totalPages);
+
+  console.log(pagesArray);
 
   const makeNewIdForPost = () => {
     return posts.length + 1;
@@ -39,9 +51,13 @@ function App() {
     console.log("Пост  удалён!");
   };
 
+  const changePage = (page) => {
+    setPage(page);
+  };
+
   useEffect(() => {
     fetchPosts();
-  }, []);
+  }, [page]);
 
   return (
     <div className="App">
@@ -94,6 +110,12 @@ function App() {
             title="Новый список постов"
           />
         )}
+
+        <MyPagination
+          pagesArray={pagesArray}
+          page={page}
+          changePage={changePage}
+        />
 
         <hr />
       </main>

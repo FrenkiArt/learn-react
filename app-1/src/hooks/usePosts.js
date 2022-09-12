@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 
 export const useSortedPosts = (posts, sort) => {
   const sortedPosts = useMemo(() => {
-    console.log("getSortedPosts()");
+    /* console.log("getSortedPosts()"); */
     if (sort) {
       if (sort === "id") {
         return [...posts.sort((a, b) => a.id - b.id)];
