@@ -23,7 +23,7 @@ export const usePosts = (posts, sort, query) => {
     return sortedPosts.filter(
       (post) =>
         post.title.toLowerCase().includes(query) ||
-        post.descr.toLowerCase().includes(query)
+        post.body.toLowerCase().includes(query)
     );
   }, [query, sortedPosts]);
 

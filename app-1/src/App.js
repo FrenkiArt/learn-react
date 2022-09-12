@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Counter from "./components/counter/Counter";
 import InputValue from "./components/InputValue";
 import Posts from "./components/posts/Posts";
@@ -9,13 +9,14 @@ import PostFilter from "./components/post-filter/PostFilter";
 import MyModal from "./components/MyModal/MyModal";
 import MyButton from "./components/UI/button/MyButton";
 import { usePosts } from "./hooks/usePosts";
+import axios from "axios";
 
 function App() {
   const [posts, setPosts] = useState([
-    { id: 1, title: "New title", descr: "New description" },
-    { id: 2, title: "AAA title", descr: "AAA description" },
-    { id: 3, title: "Ddd title", descr: "DDD description" },
-    { id: 4, title: "FFF title", descr: "FFF description" },
+    { id: 1, title: "New title", body: "New description" },
+    { id: 2, title: "AAA title", body: "AAA description" },
+    { id: 3, title: "Ddd title", body: "DDD description" },
+    { id: 4, title: "FFF title", body: "FFF description" },
   ]);
   const [filter, setFilter] = useState({ sort: "", query: "" });
   const [modal, setModal] = useState(false);
@@ -35,6 +36,18 @@ function App() {
     setPosts(posts.filter((item) => item.id !== post.id));
     console.log("Пост  удалён!");
   };
+
+  async function fetchPosts() {
+    const response = await axios.get(
+      "https://jsonplaceholder.typicode.com/posts"
+    );
+
+    setPosts(response.data);
+  }
+
+  useEffect(() => {
+    fetchPosts();
+  }, []);
 
   return (
     <div className="App">
@@ -60,6 +73,10 @@ function App() {
         <Counter />
 
         <InputValue />
+
+        <p>
+          <MyButton onClick={fetchPosts}>Получить посты</MyButton>
+        </p>
 
         <p>
           <MyButton

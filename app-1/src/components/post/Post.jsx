@@ -12,7 +12,9 @@ const Post = (props) => {
           {/* {props.number} */}
           {props.post.title || "Title"}
         </div>
-        <div className="post__descr">{props.post.descr || "Description"}</div>
+        <div className="post__descr">
+          {props.post.descr || props.post.body || "Description"}
+        </div>
       </div>
       <div className="post__btns">
         <MyButton
