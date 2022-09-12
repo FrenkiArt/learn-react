@@ -8,6 +8,7 @@ import Form from "./components/form/Form";
 import PostFilter from "./components/post-filter/PostFilter";
 import MyModal from "./components/MyModal/MyModal";
 import MyButton from "./components/UI/button/MyButton";
+import { usePosts } from "./hooks/usePosts";
 
 function App() {
   const [posts, setPosts] = useState([
@@ -16,9 +17,9 @@ function App() {
     { id: 3, title: "Ddd title", descr: "DDD description" },
     { id: 4, title: "FFF title", descr: "FFF description" },
   ]);
-
   const [filter, setFilter] = useState({ sort: "", query: "" });
   const [modal, setModal] = useState(false);
+  const sortedAndSearchedPosts = usePosts(posts, filter.sort, filter.query);
 
   const makeNewIdForPost = () => {
     return posts.length + 1;
@@ -34,29 +35,6 @@ function App() {
     setPosts(posts.filter((item) => item.id !== post.id));
     console.log("Пост  удалён!");
   };
-
-  const sortedPosts = useMemo(() => {
-    console.log("getSortedPosts()");
-    if (filter.sort) {
-      if (filter.sort === "id") {
-        return [...posts.sort((a, b) => a.id - b.id)];
-      } else {
-        return [...posts].sort((a, b) =>
-          a[filter.sort].localeCompare(b[filter.sort])
-        );
-      }
-    } else {
-      return posts;
-    }
-  }, [filter.sort, posts]);
-
-  const sortedAndSearchedPosts = useMemo(() => {
-    return sortedPosts.filter(
-      (post) =>
-        post.title.toLowerCase().includes(filter.query) ||
-        post.descr.toLowerCase().includes(filter.query)
-    );
-  }, [filter.query, sortedPosts]);
 
   return (
     <div className="App">
