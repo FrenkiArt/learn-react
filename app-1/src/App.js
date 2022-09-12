@@ -83,15 +83,11 @@ function App() {
 
         <hr />
 
-        {sortedAndSearchedPosts.length !== 0 ? (
-          <Posts
-            removePost={removePost}
-            posts={sortedAndSearchedPosts}
-            title="Новый список постов"
-          />
-        ) : (
-          <h2>Нет постов</h2>
-        )}
+        <Posts
+          removePost={removePost}
+          posts={sortedAndSearchedPosts}
+          title="Новый список постов"
+        />
 
         <Form addPost={addPost} makeNewIdForPost={makeNewIdForPost} />
 
