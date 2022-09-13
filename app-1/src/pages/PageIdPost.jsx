@@ -15,7 +15,6 @@ function PageIdPost() {
   const [fetchComments, isCommentsLoading, errorComments] = useFetching(
     async () => {
       const response = await PostService.getCommentByPostId(params.id);
-      console.log(response.data);
       setComments(response.data);
     }
   );
@@ -44,9 +43,9 @@ function PageIdPost() {
         <Loader />
       ) : (
         <div>
-          {comments.map((item) => {
+          {comments.map((item, index) => {
             return (
-              <div className="comment">
+              <div className="comment" key={index}>
                 <h5>Name - {item.name}</h5>
                 <h5>Email - {item.email}</h5>
                 <p>{item.body}</p>
