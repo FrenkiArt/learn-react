@@ -5,6 +5,7 @@
   margin-top: 15px;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 
   // .post__content
   &__content {
@@ -25,6 +26,9 @@
   // .post__btns
   &__btns {
     position: relative;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
   }
 
   // .post__btn

@@ -1,9 +1,12 @@
 import React from "react";
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import MyButton from "../UI/button/MyButton";
 import "./post.scss";
 
 const Post = (props) => {
+  const router = useNavigate();
+
   return (
     <div className="post">
       <div className="post__content">
@@ -17,6 +20,10 @@ const Post = (props) => {
         </div>
       </div>
       <div className="post__btns">
+        <MyButton onClick={() => router(`/posts/${props.post.id}`)}>
+          Open
+        </MyButton>
+
         <MyButton
           onClick={() => {
             props.removePost(props.post);
