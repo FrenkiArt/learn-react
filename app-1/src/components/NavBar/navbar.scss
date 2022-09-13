@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  align-items: center;
+
+  // .navbar__links
+  &__links {
+    margin: 0 auto;
+  }
+
+  // .navbar__link
+  &__link {
+    padding: 0.5rem 1rem;
+  }
+}
