@@ -27,6 +27,9 @@ const NavBar = () => {
           <Link to="/posts" className="navbar__link">
             Posts
           </Link>
+          <Link to="/altposts" className="navbar__link">
+            Лента постов
+          </Link>
 
           <MyButton onClick={exit}>Exit</MyButton>
         </div>
