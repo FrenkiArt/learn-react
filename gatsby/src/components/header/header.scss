@@ -1,0 +1,8 @@
+.header {
+  align-items: center;
+  border: 1px dashed var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: var(--space-4) var(--size-gutter);
+}

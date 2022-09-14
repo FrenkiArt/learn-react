@@ -52,3 +52,8 @@
   max-width: none;
   line-height: var(--line-height-loose);
 }
+
+.mycode {
+  border: 1px dashed var(--color-primary);
+  padding: 0.5rem 1rem;
+}

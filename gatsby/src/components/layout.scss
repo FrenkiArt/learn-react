@@ -222,3 +222,22 @@ pre tt:before,
 pre tt:after {
   content: none;
 }
+
+.cart-link {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 150px;
+
+  // .cart-link__img
+  &__img {
+    margin-bottom: 0;
+    max-width: 150px;
+  }
+}
+
+.list-cart-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

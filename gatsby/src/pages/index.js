@@ -1,10 +1,11 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
+import * as styles from "../components/index.module.scss"
+import gatsbyPng from "../images/example.png"
 
 const links = [
   {
@@ -69,55 +70,111 @@ const moreLinks = [
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
+const IndexPage = ({ data }) => {
+  const { nodes } = data.allMarkdownRemark
+
+  return (
+    <Layout>
+      <Seo title="Home" />
+
+      <div>
+        <div className={styles.mycode}>
+          My code
+          <p>hehe</p>
+          <div className="list-cart-links">
+            {nodes.map(post => {
+              const { category, title, url, image } = post.frontmatter
+
+              return (
+                <Link
+                  to={`/${category}/${url}`}
+                  key={post.id}
+                  data-id={post.id}
+                  className="cart-link"
+                >
+                  <img
+                    style={{
+                      width: "200px",
+                      borderRadius: "var(--border-radius)",
+                    }}
+                    alt="alt"
+                    src={image}
+                    loading="lazy"
+                    className="cart-link__img"
+                  />
+
+                  {title}
+                </Link>
+              )
+            })}
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.textCenter}>
+        <img
+          style={{ width: "320px", borderRadius: "var(--border-radius)" }}
+          alt="alt"
+          src={gatsbyPng}
+        />
+
+        <StaticImage
+          src="../images/example.png"
+          loading="eager"
+          width={64}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)` }}
+        />
+
+        <StaticImage
+          src="../images/shiba-4.jpg"
+          loading="eager"
+          width={64}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)` }}
+        />
+        <h1>
+          Welcome to <b>Gatsby!</b>
+        </h1>
+        <h2>testtt</h2>
+        <p className={styles.intro}>
+          <b>Example pages:</b>{" "}
+          {samplePageLinks.map((link, i) => (
+            <React.Fragment key={link.url}>
+              <Link to={link.url}>{link.text}</Link>
+              {i !== samplePageLinks.length - 1 && <> · </>}
+            </React.Fragment>
+          ))}
+          <br />
+          Edit <code>src/pages/index.js</code> to update this page.
+        </p>
+      </div>
+      <ul className={styles.list}>
+        {links.map(link => (
+          <li key={link.url} className={styles.listItem}>
+            <a
+              className={styles.listItemLink}
+              href={`${link.url}${utmParameters}`}
+            >
+              {link.text} ↗
+            </a>
+            <p className={styles.listItemDescription}>{link.description}</p>
+          </li>
         ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
-    </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
+      </ul>
+      {moreLinks.map((link, i) => (
+        <React.Fragment key={link.url}>
+          <a href={`${link.url}${utmParameters}`}>{link.text}</a>
+          {i !== moreLinks.length - 1 && <> · </>}
+        </React.Fragment>
       ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
-  </Layout>
-)
+    </Layout>
+  )
+}
 
 /**
  * Head export to define metadata for the page
@@ -127,3 +184,20 @@ const IndexPage = () => (
 export const Head = () => <Seo title="Home" />
 
 export default IndexPage
+
+export const query = graphql`
+  query MainPagePosts {
+    allMarkdownRemark(filter: {}) {
+      nodes {
+        html
+        frontmatter {
+          category
+          title
+          url
+          image
+        }
+        id
+      }
+    }
+  }
+`
