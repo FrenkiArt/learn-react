@@ -2,5 +2,5 @@
 
 Will keep here my react learning progress
 
-first lesson
+#first lesson just react.js
 https://632132d8a5f82b7a826f8e29--ulbi-react-learn-1.netlify.app/
