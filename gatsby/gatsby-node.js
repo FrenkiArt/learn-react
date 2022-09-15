@@ -24,13 +24,6 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  createPage({
-    path: "/using-dsg",
-    component: require.resolve("./src/templates/using-dsg.js"),
-    context: {},
-    defer: true,
-  })
-
   data.allMarkdownRemark.nodes.forEach(node => {
     const { url, category } = node.frontmatter
     const id = node.id
@@ -41,5 +34,12 @@ exports.createPages = async ({ graphql, actions }) => {
       context: { url, id },
       defer: true,
     })
+  })
+
+  createPage({
+    path: "/using-dsg",
+    component: require.resolve("./src/templates/using-dsg.js"),
+    context: {},
+    defer: true,
   })
 }
