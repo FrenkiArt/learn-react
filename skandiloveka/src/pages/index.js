@@ -1,13 +1,15 @@
 import * as React from "react"
 /* import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image" */
-
+import InputMask from "react-input-mask"
 import axios from "axios"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Card from "../components/card/card"
+import dataAllProducts from "../data/dataProducts"
+import countElsKorzina from "../utils/countElsKorzina"
 
-const IndexPage = () => {
+const IndexPage = ({ props }) => {
   const [korzina, setKorzina] = React.useState([])
   const [amount, setAmount] = React.useState(0)
   const [name, setName] = React.useState("")
@@ -18,142 +20,7 @@ const IndexPage = () => {
   const token = "5619564242:AAHTa6dvzRJFTmhdwQzVdaVTapNbCiUYwro"
   const idChatOrders = "-723744791"
   const idChatArchy = "1012193"
-
-  const dataProducts = [
-    {
-      id: "пицца-1",
-      category: "пицца",
-      title: "Чесночная",
-      descr: `сыр "Моцарелла", копченое куриное филе халяль, томаты, томатный соус, кунжут, чесночный соус`,
-      price: 330,
-    },
-    {
-      id: "пицца-2",
-      category: "пицца",
-      title: "Цезарь",
-      descr: `сыр "Моцарелла", куриное филе халяль, листья салата ,оригинальный соус "Цезарь", сыр "Пармезан", томатный соус`,
-      price: 350,
-    },
-    {
-      id: "пицца-3",
-      category: "пицца",
-      title: "Ди-Поло",
-      descr: `сыр "Моцарелла", куриное филе халяль, шампиньоны, тушеные в сливках, томаты, маслины, томатный соус`,
-      price: 370,
-    },
-    {
-      id: "пицца-4",
-      category: "пицца",
-      title: "Сезон охоты",
-      descr: `сыр "Моцарелла", охотничьи колбаски, томаты, опята маринованные, маслины, томатный соус`,
-      price: 420,
-    },
-    {
-      id: "пицца-5",
-      category: "пицца",
-      title: "Мексиканская",
-      descr: `сыр "Моцарелла", охотничьи колбаски, перец болгарский, пепперони, томаты, томатный соус (острота на выбор)`,
-      price: 380,
-    },
-    {
-      id: "пицца-6",
-      category: "пицца",
-      title: "Скандинава",
-      descr: `сыр "Моцарелла", норвежский лосось, листья салата, тигровые креветки, помидорки черри, творожный сыр`,
-      price: 460,
-    },
-    {
-      id: "пицца-7",
-      category: "пицца",
-      title: "Пепперони",
-      descr: `сыр "Моцарелла", томатный соус, томаты, пепперони, сыр "Пармезан"`,
-      price: 350,
-    },
-    {
-      id: "пицца-8",
-      category: "пицца",
-      title: "Маргарита",
-      descr: `сыр "Моцарелла", томатный соус, томаты, оливковое масло`,
-      price: 330,
-    },
-    {
-      id: "пицца-9",
-      category: "пицца",
-      title: "Гавайская",
-      descr: `сыр "Моцарелла", фирменный соус "Цезарь", копченое куриное филе, ананасы`,
-      price: 340,
-    },
-    {
-      id: "холодные-роллы-1",
-      category: "холодные-роллы",
-      title: "Филадельфия Классическая",
-      descr: `рис, норвежский лосось, сливочный сыр, авокадо, нори`,
-      price: 320,
-    },
-    {
-      id: "холодные-роллы-2",
-      category: "холодные-роллы",
-      title: "Филадельфия Лайт",
-      descr: `рис, норвежский лосось, сливочный сыр, огурец, икра "Macaro", нори`,
-      price: 320,
-    },
-    {
-      id: "холодные-роллы-3",
-      category: "холодные-роллы",
-      title: "Филадельфия Люкс",
-      descr: `рис, норвежский лосось, творожный сыр, икра красная, нори`,
-      price: 350,
-    },
-    {
-      id: "холодные-роллы-4",
-      category: "холодные-роллы",
-      title: "Овощной",
-      descr: `рис, листья салата ,перец болгарский, огурец, томаты, авокадо, нори`,
-      price: 250,
-    },
-    {
-      id: "холодные-роллы-5",
-      category: "холодные-роллы",
-      title: "Калифорния",
-      descr: `рис, тигровые креветки, сливочный сыр, огурец, авокадо, икра "Macaro", нори`,
-      price: 320,
-    },
-    {
-      id: "холодные-роллы-6",
-      category: "холодные-роллы",
-      title: "Фьюжн",
-      descr: `рис, норвежский лосось, сливочный сыр , виноград, нори`,
-      price: 330,
-    },
-    {
-      id: "холодные-роллы-7",
-      category: "холодные-роллы",
-      title: "Цезарь",
-      descr: `рис, томаты, куриное филе халяль, листья салата , сыр "Пармезан", соус "Цезарь", нори`,
-      price: 300,
-    },
-    {
-      id: "холодные-роллы-8",
-      category: "холодные-роллы",
-      title: "Чипс ролл",
-      descr: `рис, копченое куриное филе , огурец, томаты, чипсы, нори`,
-      price: 290,
-    },
-    {
-      id: "холодные-роллы-9",
-      category: "холодные-роллы",
-      title: "Сливочный с креветкой",
-      descr: `рис, тигровые креветки, сливочный сыр, авокадо, нори`,
-      price: 300,
-    },
-    {
-      id: "холодные-роллы-10",
-      category: "холодные-роллы",
-      title: "Сливочный с тунцом",
-      descr: `рис, тунец, сливочный сыр, огурец, зеленый лук, соус "Унаги",нори`,
-      price: 320,
-    },
-  ]
+  const dataProducts = dataAllProducts
 
   const updateAmount = () => {
     let newAmount = 0
@@ -208,13 +75,6 @@ const IndexPage = () => {
     updateLocaleStorage()
   }
 
-  /* const msg = encodeURI(
-    `<b>Привет с сайта</b> \n<b>Как дела?</b> \nТестовое сообщение. \n <b><i>Тестовое сообщение.</i></b>
-    \n <pre><code className="language-python">pre-formatted fixed-width code block written in the Python programming language</code></pre>
-    \n <b>bold <i>italic bold <s>italic bold strikethrough <span className="tg-spoiler">italic bold strikethrough spoiler</span></s> <u>underline italic bold</u></i> bold</b>
-    `
-  ) */
-
   const createMsg = () => {
     let msg = `---------------------------\nСообщение от бота заказов\n\n`
     msg =
@@ -260,7 +120,7 @@ const IndexPage = () => {
   }, [korzina])
 
   return (
-    <Layout>
+    <Layout korzina={korzina}>
       <Seo title="Главная" />
 
       <section className="mt-5">
@@ -294,10 +154,92 @@ const IndexPage = () => {
                   )
                 })}
               </div>
+
+              <h2 className="fw-light mb-4">Запеченные-роллы</h2>
+
+              <div className="row goods mb-5">
+                {dataProducts.map(card => {
+                  return card.category === "запеченные-роллы" ? (
+                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
+              </div>
+
+              <h2 className="fw-light mb-4">Горячие-роллы</h2>
+
+              <div className="row goods mb-5">
+                {dataProducts.map(card => {
+                  return card.category === "горячие-роллы" ? (
+                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
+              </div>
+
+              <h2 className="fw-light mb-4">Мини-роллы</h2>
+
+              <div className="row goods mb-5">
+                {dataProducts.map(card => {
+                  return card.category === "мини-роллы" ? (
+                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
+              </div>
+
+              <h2 className="fw-light mb-4">Салаты</h2>
+
+              <div className="row goods mb-5">
+                {dataProducts.map(card => {
+                  return card.category === "салаты" ? (
+                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
+              </div>
+
+              <h2 className="fw-light mb-4">Фастфуд</h2>
+
+              <div className="row goods mb-5">
+                {dataProducts.map(card => {
+                  return card.category === "фастфуд" ? (
+                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
+              </div>
             </div>
             <div className="col-md-4 col-lg-3 ">
               <div id="korzina" className="aside-sticky">
-                <h2 className="fw-light mb-4 ">Корзина </h2>
+                <h2 className="fw-light mb-4 position-relative">
+                  Корзина
+                  <span className="position-relative">
+                    {countElsKorzina(korzina) > 0 ? (
+                      <span className="position-absolute top-0 start-100   badge rounded-pill bg-danger">
+                        {countElsKorzina(korzina)}
+                        <span className="visually-hidden">unread messages</span>
+                      </span>
+                    ) : (
+                      ""
+                    )}
+                  </span>
+                </h2>
 
                 <ul className="list-group korzina mb-3">
                   {korzina.map(item => {
@@ -350,7 +292,8 @@ const IndexPage = () => {
                   </div>
 
                   <div className="input-group input-group-sm mb-2">
-                    <input
+                    <InputMask
+                      mask="+7 (999) 999-99-99"
                       type="tel"
                       className="form-control"
                       name="phone"
@@ -371,7 +314,7 @@ const IndexPage = () => {
                       name="address"
                       aria-label="address"
                       aria-describedby="inputGroup-sizing-sm"
-                      placeholder="Адрес"
+                      placeholder="Ваш адрес"
                       required
                       onInput={e => {
                         setAddress(e.target.value)

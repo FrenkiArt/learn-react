@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Navbar from "./navbar"
 import "./layout.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, korzina }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className="container-fluid p-0">
-      <Navbar siteTitle={`SkandiLoveKa`} />
+      <Navbar siteTitle={`SkandiLoveKa`} korzina={korzina} />
       <main id="main" className="main">
         {children}
       </main>
