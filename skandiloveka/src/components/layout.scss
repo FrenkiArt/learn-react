@@ -75,6 +75,7 @@ html {
   margin-right: 0.5rem;
   opacity: 0.5;
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  position: relative;
   text-decoration: none;
   transition: all 0.3s ease;
 
@@ -85,5 +86,10 @@ html {
   &:hover {
     color: #ffffff;
     opacity: 1;
+  }
+
+  .badge {
+    --bs-badge-padding-x: 0.5em;
+    --bs-badge-padding-y: 0.2em;
   }
 }

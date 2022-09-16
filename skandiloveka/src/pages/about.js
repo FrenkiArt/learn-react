@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 
 const AboutPage = () => (
   <Layout>
-    <Seo title="About Gatsby Bootsrap 5 starter" />
+    <Seo title="О нас" />
 
     <section className="mt-5">
       <div className="container  my-5 py-5 ">
