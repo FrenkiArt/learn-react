@@ -1,7 +1,6 @@
 import * as React from "react"
 /* import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image" */
-import * as bootstrap from "bootstrap"
 
 import axios from "axios"
 import Layout from "../components/layout"
