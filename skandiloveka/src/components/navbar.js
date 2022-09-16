@@ -11,7 +11,7 @@ const isActive = ({ isCurrent }) => {
 
 const ExactNavLink = props => <Link getProps={isActive} {...props} />
 
-const Navbar = ({ siteTitle, korzina }) => {
+const Navbar = ({ siteTitle, korzina = [] }) => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
       <div className="container-fluid">
