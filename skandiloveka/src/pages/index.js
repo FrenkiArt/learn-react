@@ -11,6 +11,7 @@ import Card from "../components/card/card"
 const IndexPage = () => {
   const [korzina, setKorzina] = React.useState([])
   const [amount, setAmount] = React.useState(0)
+  const [successModal, setSuccessModal] = React.useState(null)
   const [name, setName] = React.useState("")
   const [phone, setPhone] = React.useState("")
   const [address, setAddress] = React.useState("")
@@ -244,7 +245,7 @@ const IndexPage = () => {
     // axios(sendUrl)
     axios.post(sendUrl).then(response => {
       console.log(response.data)
-      window.successModal.show()
+      successModal.show()
       setKorzina([])
       localStorage.setItem("korzina", [])
       e.target.reset()
@@ -253,10 +254,13 @@ const IndexPage = () => {
 
   React.useEffect(() => {
     checkLocaleStorage()
-    window.successModal = new bootstrap.Modal(
+
+    const sModal = new bootstrap.Modal(
       document.getElementById("success-modal"),
       {}
     )
+
+    setSuccessModal(sModal)
   }, [])
 
   React.useEffect(() => {
