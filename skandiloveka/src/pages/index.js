@@ -22,6 +22,8 @@ const IndexPage = ({ props }) => {
   const idChatArchy = "1012193"
   const dataProducts = dataAllProducts
 
+  console.log(phone)
+
   const updateAmount = () => {
     let newAmount = 0
 
@@ -301,7 +303,7 @@ const IndexPage = ({ props }) => {
                       aria-describedby="inputGroup-sizing-sm"
                       placeholder="Ваш телефон"
                       required
-                      onInput={e => {
+                      onChange={e => {
                         setPhone(e.target.value)
                       }}
                     />
