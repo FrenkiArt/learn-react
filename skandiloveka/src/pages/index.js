@@ -11,10 +11,10 @@ import Card from "../components/card/card"
 const IndexPage = () => {
   const [korzina, setKorzina] = React.useState([])
   const [amount, setAmount] = React.useState(0)
-  const [successModal, setSuccessModal] = React.useState(null)
   const [name, setName] = React.useState("")
   const [phone, setPhone] = React.useState("")
   const [address, setAddress] = React.useState("")
+  const [successMsg, setSuccessMsg] = React.useState("")
   const baseURL = "https://api.telegram.org/bot"
   const token = "5619564242:AAHTa6dvzRJFTmhdwQzVdaVTapNbCiUYwro"
   const idChatOrders = "-723744791"
@@ -245,7 +245,7 @@ const IndexPage = () => {
     // axios(sendUrl)
     axios.post(sendUrl).then(response => {
       console.log(response.data)
-      successModal.show()
+      setSuccessMsg("Спасибо за Ваш заказ, он уже в обработке.")
       setKorzina([])
       localStorage.setItem("korzina", [])
       e.target.reset()
@@ -254,13 +254,6 @@ const IndexPage = () => {
 
   React.useEffect(() => {
     checkLocaleStorage()
-
-    const sModal = new bootstrap.Modal(
-      document.getElementById("success-modal"),
-      {}
-    )
-
-    setSuccessModal(sModal)
   }, [])
 
   React.useEffect(() => {
@@ -395,49 +388,17 @@ const IndexPage = () => {
                     ""
                   )}
                 </form>
+
+                {successMsg !== "" ? (
+                  <p className="text-center fw-bold p-3">{successMsg}</p>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <div
-        className="modal fade"
-        id="success-modal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLabel">
-                Поздравляем, Ваш заказ передан
-              </h5>
-              <button
-                type="button"
-                className="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div className="modal-body">
-              Спасибо за Ваш заказ,
-              <br />
-              мы свяжемся с вами по указанному вами телефону
-            </div>
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Закрыть
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
     </Layout>
   )
 }
