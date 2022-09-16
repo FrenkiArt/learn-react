@@ -34,3 +34,4 @@ bot.on("message", async (msg) => {
     await bot.sendMessage(chatId, `Id этого чата ${chatId}`);
   }
 });
+// https://api.telegram.org/bot5619564242:AAHTa6dvzRJFTmhdwQzVdaVTapNbCiUYwro/METHOD_NAME
