@@ -1,0 +1,89 @@
+//Here you can customize bootstrap
+$primary: orange;
+
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+  scrollbar-color: orange #e2ebfb;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #e2ebfb;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.row-first {
+  --bs-gutter-y: 1rem;
+}
+
+.aside-sticky {
+  position: sticky;
+  top: 70px;
+  // max-height: calc(100vh - 100px - 40px);
+  overflow: auto;
+}
+
+.goods {
+  --bs-gutter-x: 0.5rem;
+  --bs-gutter-y: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.korzina {
+  // .korzina__item
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  // .korzina__price
+  &__price {
+    margin-left: auto;
+    white-space: nowrap;
+  }
+
+  // .korzina__remove-btn
+  &__remove-btn {
+    color: red;
+  }
+}
+
+.link-to-cart {
+  align-items: center;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: var(--bs-navbar-toggler-font-size);
+  justify-content: center;
+  line-height: 1;
+  margin-left: auto;
+  margin-right: 0.5rem;
+  opacity: 0.5;
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover {
+    color: #ffffff;
+    opacity: 1;
+  }
+}

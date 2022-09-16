@@ -1,0 +1,20 @@
+.card {
+  height: 100%;
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-price {
+    position: relative;
+  }
+
+  .card-text {
+    flex: 1 1 auto;
+  }
+
+  .btn {
+    color: #0d2f6e;
+  }
+}
