@@ -1,0 +1,28 @@
+.footer {
+  border-top: 2px solid orange;
+  padding: 0.5rem 0;
+
+  // .footer__copyright
+  &__copyright {
+    align-items: center;
+    display: inline-flex;
+    height: 100%;
+    position: relative;
+  }
+
+  // .footer__socials
+  &__socials {
+    align-items: center;
+    display: inline-flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  // .footer__social
+  &__social {
+    font-size: 1.5rem;
+    line-height: 0.8;
+    text-decoration: none;
+  }
+}

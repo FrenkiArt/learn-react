@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
 
 const AboutPage = () => (
   <Layout>
@@ -11,14 +12,25 @@ const AboutPage = () => (
     <section className="mt-5">
       <div className="container  my-5 py-5 ">
         <div className="container">
-          <h1>Здесь будет информация О нас</h1>
+          <StaticImage
+            src="../images/logo.jpg"
+            quality={95}
+            formats={["AUTO", "jpg", "WEBP"]}
+            alt="SkandiLoveKa"
+            className="about-img mb-3"
+          />
 
-          <p>Какое-нибудь описание</p>
+          <h1>О нас</h1>
 
+          <p>Жизнь лучше, люди счастливее 🤍 »</p>
+          <p>Кафе семейного формата 🌿😊</p>
+          <p>Работаем каждый день с 10:00 до 22:00</p>
+          <p>Адрес: Шемордан, ул.М.Горького, дом 1 'Г'</p>
+
+          <h3>Список наших услуг</h3>
           <ul>
-            <li>11111</li>
-            <li>22222</li>
-            <li>3333</li>
+            <li>Доставка по тарифу такси</li>
+            <li>Проведение праздников</li>
           </ul>
         </div>
         <Link to="/">Вернуться на главную страницу</Link>

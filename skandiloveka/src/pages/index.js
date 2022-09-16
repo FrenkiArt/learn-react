@@ -15,14 +15,13 @@ const IndexPage = ({ props }) => {
   const [name, setName] = React.useState("")
   const [phone, setPhone] = React.useState("")
   const [address, setAddress] = React.useState("")
+  const [shiping, setShiping] = React.useState("")
   const [successMsg, setSuccessMsg] = React.useState("")
   const baseURL = "https://api.telegram.org/bot"
   const token = "5619564242:AAHTa6dvzRJFTmhdwQzVdaVTapNbCiUYwro"
   const idChatOrders = "-723744791"
-  const idChatArchy = "1012193"
+  /* const idChatArchy = "1012193" */
   const dataProducts = dataAllProducts
-
-  console.log(phone)
 
   const updateAmount = () => {
     let newAmount = 0
@@ -81,7 +80,7 @@ const IndexPage = ({ props }) => {
     let msg = `---------------------------\nСообщение от бота заказов\n\n`
     msg =
       msg +
-      `<i>Имя:</i> <b>${name}</b> \n<i>Телефон:</i> <b>${phone}</b> \n<i>Адрес:</i> <b>${address}</b>\n\n`
+      `<i>Имя:</i> <b>${name}</b> \n<i>Телефон:</i> <b>${phone}</b> \n<i>Адрес:</i> <b>${address}</b>\n<i>Доставка:</i> <b>${shiping}</b>\n\n`
     korzina.forEach(item => {
       msg =
         msg +
@@ -309,19 +308,62 @@ const IndexPage = ({ props }) => {
                     />
                   </div>
 
-                  <div className="input-group input-group-sm mb-3">
+                  {shiping !== "Самовывоз" ? (
+                    <div className="input-group input-group-sm mb-2">
+                      <input
+                        type="text"
+                        className="form-control"
+                        name="address"
+                        aria-label="address"
+                        aria-describedby="inputGroup-sizing-sm"
+                        placeholder="Ваш адрес"
+                        required
+                        onInput={e => {
+                          setAddress(e.target.value)
+                        }}
+                      />
+                    </div>
+                  ) : (
+                    ""
+                  )}
+
+                  <div
+                    className="btn-group mb-3 shiping-method"
+                    role="group"
+                    aria-label="Basic radio toggle button group"
+                  >
                     <input
-                      type="text"
-                      className="form-control"
-                      name="address"
-                      aria-label="address"
-                      aria-describedby="inputGroup-sizing-sm"
-                      placeholder="Ваш адрес"
+                      type="radio"
+                      className="btn-check"
+                      name="shiping"
+                      id="btnradio1"
+                      autoComplete="off"
                       required
-                      onInput={e => {
-                        setAddress(e.target.value)
+                      value="Доставка такси"
+                      onChange={e => {
+                        setShiping(e.target.value)
                       }}
                     />
+                    <label className="btn btn-outline-primary" for="btnradio1">
+                      Доставка такси
+                    </label>
+
+                    <input
+                      type="radio"
+                      className="btn-check"
+                      name="shiping"
+                      id="btnradio2"
+                      autoComplete="off"
+                      required
+                      value="Самовывоз"
+                      onChange={e => {
+                        setShiping(e.target.value)
+                        console.log(e.target.value)
+                      }}
+                    />
+                    <label className="btn btn-outline-primary" for="btnradio2">
+                      Самовывоз
+                    </label>
                   </div>
 
                   {korzina.length > 0 ? (
