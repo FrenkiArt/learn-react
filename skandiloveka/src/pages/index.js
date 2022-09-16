@@ -166,13 +166,13 @@ const IndexPage = () => {
   }
 
   const updateLocaleStorage = () => {
-    //localStorage.setItem("korzina", JSON.stringify(korzina))
+    localStorage.setItem("korzina", JSON.stringify(korzina))
   }
 
   const checkLocaleStorage = () => {
-    /* if (localStorage.getItem("korzina")) {
+    if (localStorage.getItem("korzina")) {
       setKorzina(JSON.parse(localStorage.getItem("korzina")))
-    } */
+    }
     updateAmount()
   }
 
