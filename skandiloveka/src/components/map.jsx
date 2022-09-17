@@ -38,6 +38,7 @@ const Map = () => {
         frameborder="1"
         allowfullscreen="true"
         style={{ position: "relative" }}
+        title="SkandiLoveKa"
       ></iframe>
     </div>
   )

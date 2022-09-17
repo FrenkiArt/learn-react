@@ -7,7 +7,7 @@ import "./layout.scss"
 import Footer from "./footer/footer"
 
 const Layout = ({ children, korzina }) => {
-  const data = useStaticQuery(graphql`
+  /* const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -15,7 +15,7 @@ const Layout = ({ children, korzina }) => {
         }
       }
     }
-  `)
+  `) */
 
   return (
     <div className="container-fluid p-0">

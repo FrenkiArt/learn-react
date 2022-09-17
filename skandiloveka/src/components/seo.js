@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function Seo({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+  /*  const { site } = useStaticQuery(
     graphql`
       query {
         site {
@@ -23,7 +23,7 @@ function Seo({ description, lang, meta, title }) {
         }
       }
     `
-  )
+  ) */
 
   const metaDescription =
     "Вкусная еда с доставкой. Жизнь лучше, люди счастливее 🤍. Кафе семейного формата 🌿😊. Работаем каждый день с 10:00 до 22:00. Адрес: Шемордан, ул.М.Горького, дом 1 'Г'"
