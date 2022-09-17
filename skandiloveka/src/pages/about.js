@@ -35,7 +35,11 @@ const AboutPage = () => (
             <li>Проведение праздников</li>
           </ul>
 
-          {/* <h3>Мы на карте</h3>
+          <h3>Мы на карте</h3>
+
+          <div id="map" className="map"></div>
+
+          {/* 
 
           <div style="position:relative;overflow:hidden;">
             <a
@@ -58,8 +62,8 @@ const AboutPage = () => (
               allowfullscreen="true"
               style="position:relative;"
             ></iframe>
-          </div>
-        </div> */}
+          </div> */}
+        </div>
 
         <Link to="/">Вернуться на главную страницу</Link>
       </div>
