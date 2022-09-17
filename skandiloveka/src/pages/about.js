@@ -31,7 +31,7 @@ const map = `<div style="position:relative;overflow:hidden;">
 </div>`
 
 if (isClient) {
-  document.querySelector("#map").innerHTML(map)
+  document.querySelector("#map").innerHTML = map
 }
 
 const AboutPage = () => (
