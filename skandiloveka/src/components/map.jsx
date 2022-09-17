@@ -1,6 +1,7 @@
 import * as React from "react"
 
 const Map = () => {
+  console.log(this)
   return (
     <div style="position:relative;overflow:hidden;">
       <a
