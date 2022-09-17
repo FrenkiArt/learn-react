@@ -18,7 +18,7 @@ const AboutPage = () => (
 
     <section className="mt-5">
       <div className="container  my-5 py-5 ">
-        <div className="container">
+        <div className="container mb-4">
           <StaticImage
             src="../images/logo.jpg"
             quality={95}
@@ -33,47 +33,19 @@ const AboutPage = () => (
           <p>Кафе семейного формата 🌿😊</p>
           <p>Работаем каждый день с 10:00 до 22:00</p>
           <p>Адрес: Шемордан, ул.М.Горького, дом 1 'Г'</p>
+        </div>
 
+        <div className="container mb-4">
           <h3>Список наших услуг</h3>
           <ul>
             <li>Доставка по тарифу такси</li>
             <li>Проведение праздников</li>
           </ul>
+        </div>
 
-          <h3>Мы на карте</h3>
-
-          {/* <a
-            href="https://yandex.ru/maps/org/skandiloveka/178421107761/?utm_medium=mapframe&utm_source=maps"
-            style="color:#eee;font-size:12px;position:absolute;top:0px;"
-          >
-            SkandiLoveKa
-          </a>
-
-          <a
-            href="https://yandex.ru/maps/11119/republic-of-tatarstan/category/cafe/184106390/?utm_medium=mapframe&utm_source=maps"
-            style="color:#eee;font-size:12px;position:absolute;top:14px;"
-          >
-            Кафе в Республике Татарстан
-          </a> */}
-
-          <iframe
-            src="https://yandex.ru/map-widget/v1/-/CCUVRXGYsC"
-            width="560"
-            height="400"
-            frameborder="1"
-            allowfullscreen="true"
-            style="position:relative;"
-          ></iframe>
-
-          <div
-            id="map"
-            className="map"
-            dangerouslySetInnerHTML={{
-              __html: "test",
-            }}
-          ></div>
-
-          {/* <Map /> */}
+        <div className="container mb-4">
+          <h3 className="mb-3">Мы на карте</h3>
+          <Map />
         </div>
 
         <Link to="/">Вернуться на главную страницу</Link>

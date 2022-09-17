@@ -152,3 +152,12 @@ html {
   font-size: 14px;
   line-height: 1;
 }
+
+.map {
+  width: 100%;
+
+  iframe {
+    object-fit: cover;
+    width: 100%;
+  }
+}
