@@ -1,3 +1,5 @@
+const siteUrl = process.env.URL || `https://skandiloveka.gatsbyjs.io/`
+
 module.exports = {
   siteMetadata: {
     title: `SkandiLoveKa`,
@@ -7,7 +9,12 @@ module.exports = {
   flags: {
     DEV_SSR: true,
   },
+  siteMetadata: {
+    // If you didn't use the resolveSiteUrl option this needs to be set
+    siteUrl: () => siteUrl,
+  },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
