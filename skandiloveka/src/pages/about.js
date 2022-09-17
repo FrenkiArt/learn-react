@@ -30,6 +30,10 @@ const map = `<div style="position:relative;overflow:hidden;">
 ></iframe>
 </div>`
 
+if (isClient) {
+  document.querySelector("#map").innerHTML(map)
+}
+
 const AboutPage = () => (
   <Layout>
     <Seo title="О нас" />
@@ -60,7 +64,7 @@ const AboutPage = () => (
 
           <h3>Мы на карте</h3>
 
-          <div id="map" className="map" dangerouslySetInnerHTML={map}></div>
+          <div id="map" className="map"></div>
 
           {/* 
 
