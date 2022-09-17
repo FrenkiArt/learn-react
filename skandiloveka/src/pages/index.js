@@ -384,7 +384,10 @@ const IndexPage = ({ props }) => {
                         setShiping(e.target.value)
                       }}
                     />
-                    <label className="btn btn-outline-primary" for="btnradio1">
+                    <label
+                      className="btn btn-outline-primary"
+                      htmlFor="btnradio1"
+                    >
                       Доставка такси
                     </label>
 
@@ -401,7 +404,10 @@ const IndexPage = ({ props }) => {
                         console.log(e.target.value)
                       }}
                     />
-                    <label className="btn btn-outline-primary" for="btnradio2">
+                    <label
+                      className="btn btn-outline-primary"
+                      htmlFor="btnradio2"
+                    >
                       Самовывоз
                     </label>
                   </div>

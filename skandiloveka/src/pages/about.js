@@ -10,6 +10,9 @@ const isClient = typeof window !== "undefined"
 
 if (isClient) {
   console.log("hello in client")
+  window.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM fully loaded and parsed")
+  })
 }
 
 const AboutPage = () => (
@@ -45,7 +48,7 @@ const AboutPage = () => (
 
         <div className="container mb-4">
           <h2 className="mb-3">Мы на карте</h2>
-          <Map />
+          {/* <Map /> */}
         </div>
 
         <Link to="/">Вернуться на главную страницу</Link>
