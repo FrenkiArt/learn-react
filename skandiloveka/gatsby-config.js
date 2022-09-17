@@ -1,5 +1,3 @@
-const siteUrl = process.env.URL || `https://skandiloveka.gatsbyjs.io/`
-
 module.exports = {
   siteMetadata: {
     title: `SkandiLoveKa`,
@@ -11,7 +9,7 @@ module.exports = {
   },
   siteMetadata: {
     // If you didn't use the resolveSiteUrl option this needs to be set
-    siteUrl: () => siteUrl,
+    siteUrl: "https://skandiloveka.gatsbyjs.io/",
   },
   plugins: [
     `gatsby-plugin-sitemap`,
