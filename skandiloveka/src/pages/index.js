@@ -107,6 +107,7 @@ const IndexPage = ({ props }) => {
       console.log(response.data)
       setSuccessMsg("Спасибо за Ваш заказ, он уже в обработке.")
       setKorzina([])
+      setShiping("")
       localStorage.setItem("korzina", [])
       e.target.reset()
     })
@@ -122,13 +123,25 @@ const IndexPage = ({ props }) => {
 
   return (
     <Layout korzina={korzina}>
-      <Seo title="Главная" />
+      <Seo title="SkandiLoveKa" />
 
       <section className="mt-5">
         <div className="container py-5">
           <div className="row row-first">
             <div className="col-md-8 col-lg-9">
-              <h2 className="fw-light mb-4">Пицца</h2>
+              <div className="list-group fast-links mb-4">
+                <a href="#picca">Пицца</a>
+                <a href="#cold-rolls">Холодные роллы</a>
+                <a href="#baked-rolls">Запеченные-роллы</a>
+                <a href="#hot-rolls">Горячие-роллы</a>
+                <a href="#mini-rolls">Мини-роллы</a>
+                <a href="#salats">Салаты</a>
+                <a href="#fastfood">Фастфуд</a>
+              </div>
+
+              <h2 id="picca" className="fw-light mb-4 link-target-with-offset">
+                Пицца
+              </h2>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -142,9 +155,14 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2 className="fw-light mb-4">Холодные роллы</h2>
+              <h2
+                id="cold-rolls"
+                className="fw-light mb-4 link-target-with-offset"
+              >
+                Холодные роллы
+              </h2>
 
-              <div className="row goods mb-5">
+              <div className="row goods  mb-5">
                 {dataProducts.map(card => {
                   return card.category === "холодные-роллы" ? (
                     <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
@@ -156,7 +174,12 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2 className="fw-light mb-4">Запеченные-роллы</h2>
+              <h2
+                id="baked-rolls"
+                className="fw-light mb-4 link-target-with-offset"
+              >
+                Запеченные-роллы
+              </h2>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -170,7 +193,12 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2 className="fw-light mb-4">Горячие-роллы</h2>
+              <h2
+                id="hot-rolls"
+                className="fw-light mb-4 link-target-with-offset"
+              >
+                Горячие-роллы
+              </h2>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -184,7 +212,12 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2 className="fw-light mb-4">Мини-роллы</h2>
+              <h2
+                id="mini-rolls"
+                className="fw-light mb-4 link-target-with-offset"
+              >
+                Мини-роллы
+              </h2>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -198,7 +231,9 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2 className="fw-light mb-4">Салаты</h2>
+              <h2 id="salats" className="fw-light mb-4 link-target-with-offset">
+                Салаты
+              </h2>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -212,7 +247,12 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2 className="fw-light mb-4">Фастфуд</h2>
+              <h2
+                id="fastfood"
+                className="fw-light mb-4 link-target-with-offset"
+              >
+                Фастфуд
+              </h2>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -308,7 +348,7 @@ const IndexPage = ({ props }) => {
                     />
                   </div>
 
-                  {shiping !== "Самовывоз" ? (
+                  {shiping === "Доставка такси" ? (
                     <div className="input-group input-group-sm mb-2">
                       <input
                         type="text"
@@ -365,6 +405,14 @@ const IndexPage = ({ props }) => {
                       Самовывоз
                     </label>
                   </div>
+
+                  {shiping === "Доставка такси" ? (
+                    <p className="text-muted p-0 small-text ">
+                      Такси оплачивается по тарифу
+                    </p>
+                  ) : (
+                    ""
+                  )}
 
                   {korzina.length > 0 ? (
                     <button type="submit" className="btn btn-success w-100">
