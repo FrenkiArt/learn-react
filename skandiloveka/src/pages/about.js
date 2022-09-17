@@ -36,7 +36,7 @@ const AboutPage = () => (
         </div>
 
         <div className="container mb-4">
-          <h3>Список наших услуг</h3>
+          <h2>Список наших услуг</h2>
           <ul>
             <li>Доставка по тарифу такси</li>
             <li>Проведение праздников</li>
@@ -44,7 +44,7 @@ const AboutPage = () => (
         </div>
 
         <div className="container mb-4">
-          <h3 className="mb-3">Мы на карте</h3>
+          <h2 className="mb-3">Мы на карте</h2>
           <Map />
         </div>
 

@@ -69,6 +69,10 @@ function Seo({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `yandex-verification`,
+          content: "198f574d1a53332f",
+        },
       ].concat(meta)}
     />
   )
