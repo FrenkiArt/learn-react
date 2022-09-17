@@ -59,7 +59,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          content: `tg: @artywork, vk: artyrich`,
         },
         {
           name: `twitter:title`,
