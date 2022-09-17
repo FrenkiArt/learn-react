@@ -5,6 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+import * as React from "react"
 
 const BodyComponents = [
   <script
@@ -12,7 +13,15 @@ const BodyComponents = [
       html: `console.log(hehehe)`,
     }}
   />,
-  <script
+  ,
+]
+
+export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
+  setHeadComponents([])
+  setPostBodyComponents([BodyComponents])
+}
+
+/* <script
     dangerouslySetInnerHTML={{
       __html: `
   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -29,14 +38,7 @@ const BodyComponents = [
   });
   `,
     }}
-  />,
-]
-
-export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
-  setHeadComponents([])
-  setPostBodyComponents([BodyComponents])
-}
-
+  /> */
 /* 
 <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
