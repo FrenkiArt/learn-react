@@ -9,7 +9,7 @@ const Map = () => {
           width="560"
           height="400"
           frameBorder="1"
-          allowFullScreen="true"
+          allowFullScreen={true}
           title="SkandiLoveKa"
         ></iframe>
       </div>
