@@ -6,7 +6,7 @@ const Card = ({ dto, addToCart }) => {
   return (
     <div className="card shadow-sm ">
       {/* <StaticImage
-        src="../../images/zagl-basic.png"
+        src={dto.image.url || "../../images/zagl-basic.png"}
         quality={95}
         formats={["AUTO", "png", "WEBP"]}
         alt={dto.title}

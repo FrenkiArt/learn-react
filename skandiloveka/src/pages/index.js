@@ -8,6 +8,7 @@ import Seo from "../components/seo"
 import Card from "../components/card/card"
 import dataAllProducts from "../data/dataProducts"
 import countElsKorzina from "../utils/countElsKorzina"
+import { useStaticQuery, graphql } from "gatsby"
 
 const IndexPage = ({ props }) => {
   const [korzina, setKorzina] = React.useState([])
@@ -22,6 +23,32 @@ const IndexPage = ({ props }) => {
   const idChatOrders = "-723744791"
   /* const idChatArchy = "1012193" */
   const dataProducts = dataAllProducts
+
+  const allProducts = useStaticQuery(graphql`
+    query MyQuery {
+      allContentfulProduct {
+        edges {
+          node {
+            category
+            price
+            title
+            descr {
+              raw
+            }
+            id
+            image {
+              url
+              title
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const arrAllProducts = allProducts.allContentfulProduct.edges
+
+  console.log(arrAllProducts)
 
   const updateAmount = () => {
     let newAmount = 0
@@ -138,6 +165,23 @@ const IndexPage = ({ props }) => {
                 <a href="#salats">Салаты</a>
                 <a href="#fastfood">Фастфуд</a>
               </div>
+
+              {/* <div className="row goods mb-5">
+                {arrAllProducts.map(card => {
+                  
+                   return card.node.category === "Пицца" ? (
+                    <div
+                      className="col-12 col-sm-6 col-lg-4"
+                      key={card.node.id}
+                    >
+                      <Card dto={card.node} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                   {"data":{},"content":[{"data":{},"content":[{"data":{},"marks":[],"value":"сыр \"Моцарелла\", куриное филе халяль, шампиньоны, тушеные в сливках, томаты, маслины, томатный соус\n\n","nodeType":"text"}],"nodeType":"paragraph"}],"nodeType":"document"} 
+                })}
+              </div> */}
 
               <h2 id="picca" className="fw-light mb-4 link-target-with-offset">
                 Пицца
