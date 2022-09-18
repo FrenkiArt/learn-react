@@ -1,12 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<root>
-  <row>
-    <id>пицца-1</id>
-    <category>пицца</category>
-    <title>Чесночная</title>
-    <descr>сыр &quot;Моцарелла&quot;, копченое куриное филе халяль, томаты, томатный соус, кунжут, чесночный соус</descr>
-    <price>330</price>
-  </row>
+  
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2020-09-18T14:37:38+03:00">
+    <shop>
+        <name>SkandiLoveKa</name>
+        <company>SkandiLoveKa</company>
+        <url>skandiloveka.gatsbyjs.io</url>
+        <currencies>
+            <currency id="RUR" rate="1"/>
+        </currencies>
+        <categories>
+          <category id="1">пицца</category>
+          <category id="1">пицца</category>
+          <category id="1">пицца</category>
+          <category id="1">пицца</category>
+          <category id="1">пицца</category>
+          <category id="1">пицца</category>
+            <!-- <category id="1">Бытовая техника</category>
+            <category id="10" parentId="1">Мелкая техника для кухни</category> -->
+        </categories>
+        <delivery-options>
+            <!-- <option cost="200" days="1"/> -->
+        </delivery-options>
+        <offers>
+            <offer id="пицца-1">
+                <name>Чесночная</name>
+                <url>skandiloveka.gatsbyjs.io</url>
+                <price>330</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <description>сыр &quot;Моцарелла&quot;, копченое куриное филе халяль, томаты, томатный соус, кунжут, чесночный соус</description>
+                <!-- <delivery>true</delivery>
+                <delivery-options>
+                    <option cost="300" days="1" order-before="18"/>
+                </delivery-options> -->
+                <!-- <param name="Цвет">белый</param> -->
+                <!-- <weight>3.6</weight> -->
+                <!-- <dimensions>20.1/20.551/22.5</dimensions> -->
+            </offer>
+        </offers>
+        <gifts>
+            <!-- подарки не из прайс‑листа -->
+        </gifts>
+        <promos>
+            <!-- промоакции -->
+        </promos>
+    </shop>
+</yml_catalog>
+
+<!-- <root> 
   <row>
     <id>пицца-2</id>
     <category>пицца</category>
@@ -385,4 +426,6 @@
     <descr>сэндвичный хлеб, соус цезарь, листья салата, ветчина куриная халяль, томаты, плавленый сыр</descr>
     <price>130</price>
   </row>
-</root>
+</root> -->
+
+
