@@ -3,7 +3,7 @@
     <shop>
         <name>SkandiLoveKa</name>
         <company>SkandiLoveKa</company>
-        <url>skandiloveka.gatsbyjs.io</url>
+        <url>https://skandiloveka.ru</url>
         <currencies>
             <currency id="RUR" rate="1"/>
         </currencies>
@@ -23,7 +23,7 @@
         <offers>
             <offer id="пицца-1">
                 <name>Чесночная</name>
-                <url>https://skandiloveka.ru/</url>
+                <url>https://skandiloveka.ru</url>
                 <price>330</price>
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
@@ -38,7 +38,7 @@
             </offer>
             <offer id="пицца-2">
                 <name>Цезарь</name>
-                <url>https://skandiloveka.ru/</url>
+                <url>https://skandiloveka.ru</url>
                 <price>350</price>
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
@@ -46,14 +46,14 @@
             </offer> 
             <offer id="пицца-3">
                 <name>Ди-Поло</name>
-                <url>https://skandiloveka.ru/</url>
+                <url>https://skandiloveka.ru</url>
                 <price>370</price>
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <description>сыр &quot;Моцарелла&quot;, куриное филе халяль, шампиньоны, тушеные в сливках, томаты, маслины, томатный соус</description>
             </offer> 
             <offer id="пицца-4"> 
-                <url>https://skandiloveka.ru/</url> 
+                <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <name>Сезон охоты</name>
@@ -61,7 +61,7 @@
                 <price>420</price>
             </offer> 
             <offer id="пицца-5"> 
-                <url>https://skandiloveka.ru/</url> 
+                <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <name>Мексиканская</name>
@@ -69,7 +69,7 @@
                 <price>380</price>
             </offer>  
             <offer id="пицца-6"> 
-                <url>https://skandiloveka.ru/</url> 
+                <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <name>Скандинава</name>
@@ -77,7 +77,7 @@
                 <price>460</price>
             </offer> 
             <offer id="пицца-7"> 
-                <url>https://skandiloveka.ru/</url> 
+                <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <name>Пепперони</name>
@@ -85,7 +85,7 @@
                 <price>350</price>
             </offer> 
             <offer id="пицца-8"> 
-                <url>https://skandiloveka.ru/</url> 
+                <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <name>Маргарита</name>
@@ -93,7 +93,7 @@
                 <price>330</price>
             </offer> 
             <offer id="пицца-9"> 
-                <url>https://skandiloveka.ru/</url> 
+                <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <name>Гавайская</name>
@@ -101,7 +101,7 @@
                 <price>340</price>
             </offer> 
             <offer id="пицца-"> 
-                <url>https://skandiloveka.ru/</url> 
+                <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <name></name>
