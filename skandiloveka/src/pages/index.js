@@ -15,6 +15,7 @@ const IndexPage = ({ props }) => {
   const [amount, setAmount] = React.useState(0)
   const [name, setName] = React.useState("")
   const [phone, setPhone] = React.useState("")
+  const [comment, setComment] = React.useState("")
   const [address, setAddress] = React.useState("")
   const [shiping, setShiping] = React.useState("")
   const [successMsg, setSuccessMsg] = React.useState("")
@@ -105,7 +106,7 @@ const IndexPage = ({ props }) => {
     let msg = `---------------------------\nСообщение от бота заказов\n\n`
     msg =
       msg +
-      `<i>Имя:</i> <b>${name}</b> \n<i>Телефон:</i> <b>${phone}</b> \n<i>Адрес:</i> <b>${address}</b>\n<i>Доставка:</i> <b>${shiping}</b>\n\n`
+      `<i>Имя:</i> <b>${name}</b> \n<i>Телефон:</i> <b>${phone}</b> \n<i>Адрес:</i> <b>${address}</b>\n<i>Доставка:</i> <b>${shiping}</b>\n<i>Комментарий:</i> <b>${comment}</b>\n\n`
     korzina.forEach(item => {
       msg =
         msg +
@@ -519,6 +520,18 @@ const IndexPage = ({ props }) => {
                         setPhone(e.target.value)
                       }}
                     />
+                  </div>
+
+                  <div className="input-group input-group-sm mb-2">
+                    <textarea
+                      class="form-control"
+                      aria-label="Оставить комментарий"
+                      placeholder="Оставить комментарий"
+                      name="comment"
+                      onChange={e => {
+                        setComment(e.target.value)
+                      }}
+                    ></textarea>
                   </div>
 
                   {shiping === "Доставка такси" ? (
