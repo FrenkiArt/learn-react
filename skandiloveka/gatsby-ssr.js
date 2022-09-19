@@ -5,18 +5,21 @@
  */
 
 // You can delete this file if you're not using it
-import * as React from "react"
+/* import * as React from "react"
 
 const BodyComponents = [
-  <script
+  {
+    <script
     key="ya-metrica"
     async
     src="yandex.metrica.js"
     type="text/javascript"
   />,
+  },
 ]
 
 export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
   setHeadComponents()
   setPostBodyComponents(BodyComponents)
 }
+ */

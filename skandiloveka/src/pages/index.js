@@ -8,7 +8,7 @@ import Seo from "../components/seo"
 import Card from "../components/card/card"
 import dataAllProducts from "../data/dataProducts"
 import countElsKorzina from "../utils/countElsKorzina"
-import { useStaticQuery, graphql } from "gatsby"
+/* import { useStaticQuery, graphql } from "gatsby" */
 
 const IndexPage = ({ props }) => {
   const [korzina, setKorzina] = React.useState([])
@@ -24,7 +24,7 @@ const IndexPage = ({ props }) => {
   /* const idChatArchy = "1012193" */
   const dataProducts = dataAllProducts
 
-  const allProducts = useStaticQuery(graphql`
+  /* const allProducts = useStaticQuery(graphql`
     query MyQuery {
       allContentfulProduct {
         edges {
@@ -44,11 +44,9 @@ const IndexPage = ({ props }) => {
         }
       }
     }
-  `)
+  `) */
 
-  const arrAllProducts = allProducts.allContentfulProduct.edges
-
-  console.log(arrAllProducts)
+  /* const arrAllProducts = allProducts.allContentfulProduct.edges */
 
   const updateAmount = () => {
     let newAmount = 0
@@ -445,7 +443,6 @@ const IndexPage = ({ props }) => {
                       value="Самовывоз"
                       onChange={e => {
                         setShiping(e.target.value)
-                        console.log(e.target.value)
                       }}
                     />
                     <label
