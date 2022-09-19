@@ -120,13 +120,11 @@ html {
   top: 55px;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  row-gap: 2px;
-  column-gap: 10px;
+  gap: 2px 10px;
   padding: 5px 0.5rem;
   background-color: #ffffff;
   z-index: 3;
-  font-size: 12px;
+  font-size: 1rem;
   flex-direction: row;
 
   a {
@@ -142,18 +140,23 @@ html {
   &:before {
     content: "";
     display: block;
-    height: 145px;
-    margin: -145px 0 0;
+    height: 200px;
+    margin: -200px 0 0;
     pointer-events: none;
 
     @media (min-width: 576px) {
-      height: 125px;
-      margin: -125px 0 0;
+      height: 170px;
+      margin: -170px 0 0;
     }
 
     @media (min-width: 992px) {
-      height: 105px;
-      margin: -105px 0 0;
+      height: 145px;
+      margin: -145px 0 0;
+    }
+
+    @media (min-width: 1200px) {
+      height: 115px;
+      margin: -115px 0 0;
     }
   }
 }
