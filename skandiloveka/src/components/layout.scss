@@ -173,9 +173,11 @@ html {
 }
 
 .geo-point {
+  align-items: center;
   color: #ffffff;
   display: inline-flex;
-  align-items: center;
-  opacity: 0.8;
   gap: 4px;
+  opacity: 0.8;
+  padding-right: var(--bs-navbar-nav-link-padding-x);
+  padding-left: var(--bs-navbar-nav-link-padding-x);
 }
