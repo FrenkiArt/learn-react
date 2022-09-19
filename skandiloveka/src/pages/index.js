@@ -156,12 +156,18 @@ const IndexPage = ({ props }) => {
             <div className="col-md-8 col-lg-9">
               <div className="list-group fast-links mb-4">
                 <a href="#picca">Пицца</a>
-                <a href="#cold-rolls">Холодные роллы</a>
+                <a href="#cold-rolls">Холодные-роллы</a>
                 <a href="#baked-rolls">Запеченные-роллы</a>
                 <a href="#hot-rolls">Горячие-роллы</a>
                 <a href="#mini-rolls">Мини-роллы</a>
                 <a href="#salats">Салаты</a>
                 <a href="#fastfood">Фастфуд</a>
+                <a href="#deserts">Десерты</a>
+                <a href="#cofe">Кофе</a>
+                <a href="#milk-cocktails">Коктейли-молочные</a>
+                <a href="#smoothie">Смузи</a>
+                <a href="#branded-drinks">Фирменные-напитки</a>
+                <a href="#cold-drinks">Холодные-напитки</a>
               </div>
 
               {/* <div className="row goods mb-5">
@@ -220,7 +226,7 @@ const IndexPage = ({ props }) => {
                 id="baked-rolls"
                 className="fw-light mb-4 link-target-with-offset"
               >
-                Запеченные-роллы
+                Запеченные роллы
               </h2>
 
               <div className="row goods mb-5">
@@ -239,7 +245,7 @@ const IndexPage = ({ props }) => {
                 id="hot-rolls"
                 className="fw-light mb-4 link-target-with-offset"
               >
-                Горячие-роллы
+                Горячие роллы
               </h2>
 
               <div className="row goods mb-5">
@@ -299,6 +305,117 @@ const IndexPage = ({ props }) => {
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
                   return card.category === "фастфуд" ? (
+                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
+              </div>
+
+              <h2
+                id="deserts"
+                className="fw-light mb-4 link-target-with-offset"
+              >
+                Десерты
+              </h2>
+
+              <div className="row goods mb-5">
+                {dataProducts.map(card => {
+                  return card.category === "десерты" ? (
+                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
+              </div>
+
+              <h2 id="cofe" className="fw-light mb-4 link-target-with-offset">
+                Кофе
+              </h2>
+
+              <div className="row goods mb-5">
+                {dataProducts.map(card => {
+                  return card.category === "кофе" ? (
+                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
+              </div>
+
+              <h2
+                id="milk-cocktails"
+                className="fw-light mb-4 link-target-with-offset"
+              >
+                Коктейли молочные
+              </h2>
+
+              <div className="row goods mb-5">
+                {dataProducts.map(card => {
+                  return card.category === "коктейли-молочные" ? (
+                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
+              </div>
+
+              <h2
+                id="smoothie"
+                className="fw-light mb-4 link-target-with-offset"
+              >
+                Смузи
+              </h2>
+
+              <div className="row goods mb-5">
+                {dataProducts.map(card => {
+                  return card.category === "смузи" ? (
+                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
+              </div>
+
+              <h2
+                id="branded-drinks"
+                className="fw-light mb-4 link-target-with-offset"
+              >
+                Фирменные напитки
+              </h2>
+
+              <div className="row goods mb-5">
+                {dataProducts.map(card => {
+                  return card.category === "фирменные-напитки" ? (
+                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
+              </div>
+
+              <h2
+                id="cold-drinks"
+                className="fw-light mb-4 link-target-with-offset"
+              >
+                Холодные напитки
+              </h2>
+
+              <div className="row goods mb-5">
+                {dataProducts.map(card => {
+                  return card.category === "холодные-напитки" ? (
                     <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>

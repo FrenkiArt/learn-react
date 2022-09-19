@@ -15,7 +15,10 @@ const Card = ({ dto, addToCart }) => {
 
       <div className="card-body">
         <h4 className="card-title fw-bold">{dto.title}</h4>
-        <p className="card-price fw-bold">Цена: {dto.price} ₽</p>
+        <p className="card-price fw-bold">
+          <span>Цена: {dto.price} ₽</span>
+          {dto.weight ? <span> / {dto.weight} </span> : ""}
+        </p>
         <p className="card-text">{dto.descr}</p>
         <button
           className="btn btn-primary"

@@ -142,9 +142,19 @@ html {
   &:before {
     content: "";
     display: block;
-    height: 105px;
-    margin: -105px 0 0;
+    height: 145px;
+    margin: -145px 0 0;
     pointer-events: none;
+
+    @media (min-width: 576px) {
+      height: 125px;
+      margin: -125px 0 0;
+    }
+
+    @media (min-width: 992px) {
+      height: 105px;
+      margin: -105px 0 0;
+    }
   }
 }
 
