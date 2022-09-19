@@ -157,10 +157,10 @@ const IndexPage = ({ props }) => {
             <div className="col-md-8 col-lg-9">
               <div className="list-group fast-links mb-4">
                 <a href="#picca">Пицца</a>
-                <a href="#cold-rolls">Холодные-роллы</a>
-                <a href="#baked-rolls">Запеченные-роллы</a>
-                <a href="#hot-rolls">Горячие-роллы</a>
-                <a href="#mini-rolls">Мини-роллы</a>
+                <a href="#cold-rolls">Роллы-холодные</a>
+                <a href="#baked-rolls">Роллы-запеченные</a>
+                <a href="#hot-rolls">Роллы-горячие</a>
+                <a href="#mini-rolls">Роллы-мини</a>
                 <a href="#salats">Салаты</a>
                 <a href="#fastfood">Фастфуд</a>
                 <a href="#deserts">Десерты</a>
@@ -211,7 +211,7 @@ const IndexPage = ({ props }) => {
                   id="cold-rolls"
                   className="fw-light link-target-with-offset"
                 >
-                  Холодные роллы
+                  Роллы холодные
                 </h2>
               </div>
 
@@ -232,7 +232,7 @@ const IndexPage = ({ props }) => {
                   id="baked-rolls"
                   className="fw-light link-target-with-offset"
                 >
-                  Запеченные роллы
+                  Роллы запеченные
                 </h2>
               </div>
 
@@ -250,7 +250,7 @@ const IndexPage = ({ props }) => {
 
               <div class="btn btn-success box-btn-title mb-4">
                 <h2 id="hot-rolls" className="fw-light link-target-with-offset">
-                  Горячие роллы
+                  Роллы горячие
                 </h2>
               </div>
 
@@ -271,7 +271,7 @@ const IndexPage = ({ props }) => {
                   id="mini-rolls"
                   className="fw-light link-target-with-offset"
                 >
-                  Мини-роллы
+                  Роллы-мини
                 </h2>
               </div>
 
