@@ -57,7 +57,7 @@
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <name>Сезон охоты</name>
-                <description>сыр &quot;Моцарелла&quot;, охотничьи колбаски, томаты, опята маринованные, маслины, томатный соус</descr>
+                <description>сыр &quot;Моцарелла&quot;, охотничьи колбаски, томаты, опята маринованные, маслины, томатный соус</description>
                 <price>420</price>
             </offer> 
             <offer id="пицца-5"> 
@@ -65,7 +65,7 @@
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <name>Мексиканская</name>
-                <description>сыр &quot;Моцарелла&quot;, охотничьи колбаски, перец болгарский, пепперони, томаты, томатный соус (острота на выбор)</descr>
+                <description>сыр &quot;Моцарелла&quot;, охотничьи колбаски, перец болгарский, пепперони, томаты, томатный соус (острота на выбор)</description>
                 <price>380</price>
             </offer>  
             <offer id="пицца-6"> 
@@ -73,7 +73,7 @@
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <name>Скандинава</name>
-                <description>сыр &quot;Моцарелла&quot;, норвежский лосось, листья салата, тигровые креветки, помидорки черри, творожный сыр</descr>
+                <description>сыр &quot;Моцарелла&quot;, норвежский лосось, листья салата, тигровые креветки, помидорки черри, творожный сыр</description>
                 <price>460</price>
             </offer> 
             <offer id="пицца-7"> 
@@ -81,7 +81,7 @@
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <name>Пепперони</name>
-                <description>сыр &quot;Моцарелла&quot;, томатный соус, томаты, пепперони, сыр &quot;Пармезан&quot;</descr>
+                <description>сыр &quot;Моцарелла&quot;, томатный соус, томаты, пепперони, сыр &quot;Пармезан&quot;</description>
                 <price>350</price>
             </offer> 
             <offer id="пицца-8"> 
@@ -89,7 +89,7 @@
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <name>Маргарита</name>
-                <description>сыр &quot;Моцарелла&quot;, томатный соус, томаты, оливковое масло</descr>
+                <description>сыр &quot;Моцарелла&quot;, томатный соус, томаты, оливковое масло</description>
                 <price>330</price>
             </offer> 
             <offer id="пицца-9"> 
@@ -97,7 +97,7 @@
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <name>Гавайская</name>
-                <description>сыр &quot;Моцарелла&quot;, фирменный соус &quot;Цезарь&quot;, копченое куриное филе, ананасы</descr>
+                <description>сыр &quot;Моцарелла&quot;, фирменный соус &quot;Цезарь&quot;, копченое куриное филе, ананасы</description>
                 <price>340</price>
             </offer> 
             <offer id="пицца-"> 
@@ -123,322 +123,322 @@
     <id>холодные-роллы-1</id>
     <category>холодные-роллы</category>
     <title>Филадельфия Классическая</title>
-    <description>рис, норвежский лосось, сливочный сыр, авокадо, нори</descr>
+    <description>рис, норвежский лосось, сливочный сыр, авокадо, нори</description>
     <price>320</price>
   </row>
   <row>
     <id>холодные-роллы-2</id>
     <category>холодные-роллы</category>
     <title>Филадельфия Лайт</title>
-    <description>рис, норвежский лосось, сливочный сыр, огурец, икра &quot;Macaro&quot;, нори</descr>
+    <description>рис, норвежский лосось, сливочный сыр, огурец, икра &quot;Macaro&quot;, нори</description>
     <price>320</price>
   </row>
   <row>
     <id>холодные-роллы-3</id>
     <category>холодные-роллы</category>
     <title>Филадельфия Люкс</title>
-    <description>рис, норвежский лосось, творожный сыр, икра красная, нори</descr>
+    <description>рис, норвежский лосось, творожный сыр, икра красная, нори</description>
     <price>350</price>
   </row>
   <row>
     <id>холодные-роллы-4</id>
     <category>холодные-роллы</category>
     <title>Овощной</title>
-    <description>рис, листья салата ,перец болгарский, огурец, томаты, авокадо, нори</descr>
+    <description>рис, листья салата ,перец болгарский, огурец, томаты, авокадо, нори</description>
     <price>250</price>
   </row>
   <row>
     <id>холодные-роллы-5</id>
     <category>холодные-роллы</category>
     <title>Калифорния</title>
-    <description>рис, тигровые креветки, сливочный сыр, огурец, авокадо, икра &quot;Macaro&quot;, нори</descr>
+    <description>рис, тигровые креветки, сливочный сыр, огурец, авокадо, икра &quot;Macaro&quot;, нори</description>
     <price>320</price>
   </row>
   <row>
     <id>холодные-роллы-6</id>
     <category>холодные-роллы</category>
     <title>Фьюжн</title>
-    <description>рис, норвежский лосось, сливочный сыр , виноград, нори</descr>
+    <description>рис, норвежский лосось, сливочный сыр , виноград, нори</description>
     <price>330</price>
   </row>
   <row>
     <id>холодные-роллы-7</id>
     <category>холодные-роллы</category>
     <title>Цезарь</title>
-    <description>рис, томаты, куриное филе халяль, листья салата , сыр &quot;Пармезан&quot;, соус &quot;Цезарь&quot;, нори</descr>
+    <description>рис, томаты, куриное филе халяль, листья салата , сыр &quot;Пармезан&quot;, соус &quot;Цезарь&quot;, нори</description>
     <price>300</price>
   </row>
   <row>
     <id>холодные-роллы-8</id>
     <category>холодные-роллы</category>
     <title>Чипс ролл</title>
-    <description>рис, копченое куриное филе , огурец, томаты, чипсы, нори</descr>
+    <description>рис, копченое куриное филе , огурец, томаты, чипсы, нори</description>
     <price>290</price>
   </row>
   <row>
     <id>холодные-роллы-9</id>
     <category>холодные-роллы</category>
     <title>Сливочный с креветкой</title>
-    <description>рис, тигровые креветки, сливочный сыр, авокадо, нори</descr>
+    <description>рис, тигровые креветки, сливочный сыр, авокадо, нори</description>
     <price>300</price>
   </row>
   <row>
     <id>холодные-роллы-10</id>
     <category>холодные-роллы</category>
     <title>Сливочный с тунцом</title>
-    <description>рис, тунец, сливочный сыр, огурец, зеленый лук, соус &quot;Унаги&quot;,нори</descr>
+    <description>рис, тунец, сливочный сыр, огурец, зеленый лук, соус &quot;Унаги&quot;,нори</description>
     <price>320</price>
   </row>
   <row>
     <id>запеченные-роллы-1</id>
     <category>запеченные-роллы</category>
     <title>Со снежным крабом</title>
-    <description>рис, икра &quot;Масаrа&quot;, авокадо, снежный краб в остром соусе &quot;Спайси&quot;, сыр &quot;Мацарелла&quot;, фирменная шапочка</descr>
+    <description>рис, икра &quot;Масаrа&quot;, авокадо, снежный краб в остром соусе &quot;Спайси&quot;, сыр &quot;Мацарелла&quot;, фирменная шапочка</description>
     <price>310</price>
   </row>
   <row>
     <id>запеченные-роллы-2</id>
     <category>запеченные-роллы</category>
     <title>С копченой курицей</title>
-    <description>рис, творожный сыр, копченое куриное филе халяль, листья салата, сыр &quot;Мацарелла&quot;, кунжут, фирменная шапочка</descr>
+    <description>рис, творожный сыр, копченое куриное филе халяль, листья салата, сыр &quot;Мацарелла&quot;, кунжут, фирменная шапочка</description>
     <price>310</price>
   </row>
   <row>
     <id>запеченные-роллы-3</id>
     <category>запеченные-роллы</category>
     <title>Премиум</title>
-    <description>рис, сливочный сыр, авокадо, норвежский лосось в кисло-соленом соусе, сыр &quot;Мацарелла&quot;, икра красная</descr>
+    <description>рис, сливочный сыр, авокадо, норвежский лосось в кисло-соленом соусе, сыр &quot;Мацарелла&quot;, икра красная</description>
     <price>350</price>
   </row>
   <row>
     <id>запеченные-роллы-4</id>
     <category>запеченные-роллы</category>
     <title>С угрем</title>
-    <description>рис, икра &quot;Масаrа&quot;, сливочный сыр, угорь жареный, сыр &quot;Мацарелла&quot;, соус &quot; Унаги&quot;</descr>
+    <description>рис, икра &quot;Масаrа&quot;, сливочный сыр, угорь жареный, сыр &quot;Мацарелла&quot;, соус &quot; Унаги&quot;</description>
     <price>320</price>
   </row>
   <row>
     <id>запеченные-роллы-5</id>
     <category>запеченные-роллы</category>
     <title>Феникс</title>
-    <description>рис, икра &quot;Масаrа&quot;, куриное филе, сливочный сыр, снежный краб, сыр &quot;Мацарелла&quot;, соус &quot;Спайси&quot;</descr>
+    <description>рис, икра &quot;Масаrа&quot;, куриное филе, сливочный сыр, снежный краб, сыр &quot;Мацарелла&quot;, соус &quot;Спайси&quot;</description>
     <price>330</price>
   </row>
   <row>
     <id>запеченные-роллы-6</id>
     <category>запеченные-роллы</category>
     <title>С креветкой</title>
-    <description>рис, тигровые креветки, сыр творожный, икра &quot;Масаrа&quot;, сыр &quot;Мацарелла&quot;, помидорки &quot;Черри&quot;</descr>
+    <description>рис, тигровые креветки, сыр творожный, икра &quot;Масаrа&quot;, сыр &quot;Мацарелла&quot;, помидорки &quot;Черри&quot;</description>
     <price>330</price>
   </row>
   <row>
     <id>запеченные-роллы-7</id>
     <category>запеченные-роллы</category>
     <title>С тунцом</title>
-    <description>рис, тунец, авокадо, огурец, икра &quot;Масаrа&quot;, лук зеленый, фирменная шапочка</descr>
+    <description>рис, тунец, авокадо, огурец, икра &quot;Масаrа&quot;, лук зеленый, фирменная шапочка</description>
     <price>340</price>
   </row>
   <row>
     <id>горячие-роллы-1</id>
     <category>горячие-роллы</category>
     <title>Скандинава</title>
-    <description>рис, норвежский лосось, сливочный сыр, авокадо, темпурный кляр, соус &quot;Унаги&quot;, соус &quot;Спайси&quot;</descr>
+    <description>рис, норвежский лосось, сливочный сыр, авокадо, темпурный кляр, соус &quot;Унаги&quot;, соус &quot;Спайси&quot;</description>
     <price>330</price>
   </row>
   <row>
     <id>горячие-роллы-2</id>
     <category>горячие-роллы</category>
     <title>Нэко</title>
-    <description>рис, снежный краб, сливочный сыр, огурец, темпурный кляр, соус &quot;Унаги&quot;, соус &quot;Спайси&quot;</descr>
+    <description>рис, снежный краб, сливочный сыр, огурец, темпурный кляр, соус &quot;Унаги&quot;, соус &quot;Спайси&quot;</description>
     <price>320</price>
   </row>
   <row>
     <id>горячие-роллы-3</id>
     <category>горячие-роллы</category>
     <title>Унаги</title>
-    <description>рис, копченый угорь, сливочный сыр, огурец, темпурный кляр, соус &quot;Унаги&quot;</descr>
+    <description>рис, копченый угорь, сливочный сыр, огурец, темпурный кляр, соус &quot;Унаги&quot;</description>
     <price>320</price>
   </row>
   <row>
     <id>горячие-роллы-4</id>
     <category>горячие-роллы</category>
     <title>Инь Янь</title>
-    <description>рис, норвежский лосось, сливочный сыр, копченый угорь, темпурный кляр, соус &quot;Унаги&quot;, кунжут</descr>
+    <description>рис, норвежский лосось, сливочный сыр, копченый угорь, темпурный кляр, соус &quot;Унаги&quot;, кунжут</description>
     <price>340</price>
   </row>
   <row>
     <id>горячие-роллы-5</id>
     <category>горячие-роллы</category>
     <title>Горячий с креветкой</title>
-    <description>рис, тигровые креветки, сливочный сыр, авокадо, огурец, темпурный кляр, соус &quot;Спайси&quot;</descr>
+    <description>рис, тигровые креветки, сливочный сыр, авокадо, огурец, темпурный кляр, соус &quot;Спайси&quot;</description>
     <price>320</price>
   </row>
   <row>
     <id>горячие-роллы-6</id>
     <category>горячие-роллы</category>
     <title>Горячий с курицей</title>
-    <description>рис, куриное филе , огурец, соус &quot;Спайси&quot;, темпурный кляр</descr>
+    <description>рис, куриное филе , огурец, соус &quot;Спайси&quot;, темпурный кляр</description>
     <price>290</price>
   </row>
   <row>
     <id>горячие-роллы-7</id>
     <category>горячие-роллы</category>
     <title>Цезарь в темпуре</title>
-    <description>рис, томат, листья салата, куриное филе Халяль, темпурный кляр, соус &quot;Цезарь&quot;, сыр &quot;Пармезан&quot;</descr>
+    <description>рис, томат, листья салата, куриное филе Халяль, темпурный кляр, соус &quot;Цезарь&quot;, сыр &quot;Пармезан&quot;</description>
     <price>310</price>
   </row>
   <row>
     <id>горячие-роллы-8</id>
     <category>горячие-роллы</category>
     <title>Кентуки</title>
-    <description>рис, копченое куриное филе, сыр &quot;Мацарелла&quot;, болгарский перец, темпурный кляр, соус &quot;Цезарь&quot;, соус &quot;Терияки&quot;</descr>
+    <description>рис, копченое куриное филе, сыр &quot;Мацарелла&quot;, болгарский перец, темпурный кляр, соус &quot;Цезарь&quot;, соус &quot;Терияки&quot;</description>
     <price>310</price>
   </row>
   <row>
     <id>горячие-роллы-9</id>
     <category>горячие-роллы</category>
     <title>Вулкан</title>
-    <description>рис, снежный краб, творожный сыр, куриное филе, темпурный кляр, соус &quot;Спайси&quot;, икра &quot;Масаro&quot;</descr>
+    <description>рис, снежный краб, творожный сыр, куриное филе, темпурный кляр, соус &quot;Спайси&quot;, икра &quot;Масаro&quot;</description>
     <price>320</price>
   </row>
   <row>
     <id>горячие-роллы-10</id>
     <category>горячие-роллы</category>
     <title>Магуро</title>
-    <description>рис, тунец, сливочный сыр, авокадо, зеленый лук, темпурный кляр, кунжут, соус &quot;Унаги&quot;</descr>
+    <description>рис, тунец, сливочный сыр, авокадо, зеленый лук, темпурный кляр, кунжут, соус &quot;Унаги&quot;</description>
     <price>340</price>
   </row>
   <row>
     <id>мини-роллы-1</id>
     <category>мини-роллы</category>
     <title>С огурцом</title>
-    <description>рис, огурец, нори</descr>
+    <description>рис, огурец, нори</description>
     <price>100</price>
   </row>
   <row>
     <id>мини-роллы-2</id>
     <category>мини-роллы</category>
     <title>С лососем</title>
-    <description>рис, норвежский лосось, нори</descr>
+    <description>рис, норвежский лосось, нори</description>
     <price>170</price>
   </row>
   <row>
     <id>мини-роллы-3</id>
     <category>мини-роллы</category>
     <title>С угрем</title>
-    <description>рис, угорь, нори</descr>
+    <description>рис, угорь, нори</description>
     <price>160</price>
   </row>
   <row>
     <id>мини-роллы-4</id>
     <category>мини-роллы</category>
     <title>С креветкой</title>
-    <description>рис, тигровые креветки, нори</descr>
+    <description>рис, тигровые креветки, нори</description>
     <price>180</price>
   </row>
   <row>
     <id>мини-роллы-5</id>
     <category>мини-роллы</category>
     <title>С авокадо</title>
-    <description>рис, авокадо, нори</descr>
+    <description>рис, авокадо, нори</description>
     <price>130</price>
   </row>
   <row>
     <id>мини-роллы-6</id>
     <category>мини-роллы</category>
     <title>С курицей</title>
-    <description>рис, куриное филе, нори</descr>
+    <description>рис, куриное филе, нори</description>
     <price>125</price>
   </row>
   <row>
     <id>салаты-1</id>
     <category>салаты</category>
     <title>Греческий</title>
-    <description>томаты, болгарский перец, огурец, листья салата , творожный сыр, оливковое масло, маслины</descr>
+    <description>томаты, болгарский перец, огурец, листья салата , творожный сыр, оливковое масло, маслины</description>
     <price>150</price>
   </row>
   <row>
     <id>салаты-2</id>
     <category>салаты</category>
     <title>Цезарь</title>
-    <description>листья салата , оригинальный соус &quot;Цезарь&quot;, гренки, сыр &quot;Пармезан&quot;, помидоры черри, копченое куриное филе</descr>
+    <description>листья салата , оригинальный соус &quot;Цезарь&quot;, гренки, сыр &quot;Пармезан&quot;, помидоры черри, копченое куриное филе</description>
     <price>190</price>
   </row>
   <row>
     <id>салаты-3</id>
     <category>салаты</category>
     <title>Терияки</title>
-    <description>огурцы, помидоры, листья салата , куриное филе, соус &quot;Терияки&quot;, кунжут</descr>
+    <description>огурцы, помидоры, листья салата , куриное филе, соус &quot;Терияки&quot;, кунжут</description>
     <price>160</price>
   </row>
   <row>
     <id>фастфуд-1</id>
     <category>фастфуд</category>
     <title>Картофель ФРИ</title>
-    <description></descr>
+    <description></description>
     <price>100</price>
   </row>
   <row>
     <id>фастфуд-2</id>
     <category>фастфуд</category>
     <title>Картофель по-деревенски</title>
-    <description></descr>
+    <description></description>
     <price>100</price>
   </row>
   <row>
     <id>фастфуд-3</id>
     <category>фастфуд</category>
     <title>Наггетсы (6 шт.)</title>
-    <description></descr>
+    <description></description>
     <price>110</price>
   </row>
   <row>
     <id>фастфуд-4</id>
     <category>фастфуд</category>
     <title>Соус томатный</title>
-    <description></descr>
+    <description></description>
     <price>30</price>
   </row>
   <row>
     <id>фастфуд-5</id>
     <category>фастфуд</category>
     <title>Соус сырный</title>
-    <description></descr>
+    <description></description>
     <price>30</price>
   </row>
   <row>
     <id>фастфуд-6</id>
     <category>фастфуд</category>
     <title>Соус цезарь</title>
-    <description></descr>
+    <description></description>
     <price>30</price>
   </row>
   <row>
     <id>фастфуд-7</id>
     <category>фастфуд</category>
     <title>Соус кисло-сладкий</title>
-    <description></descr>
+    <description></description>
     <price>30</price>
   </row>
   <row>
     <id>фастфуд-8</id>
     <category>фастфуд</category>
     <title>Хот-дог</title>
-    <description></descr>
+    <description></description>
     <price>100</price>
   </row>
   <row>
     <id>фастфуд-9</id>
     <category>фастфуд</category>
     <title>Хот-дог с сыром и томатами</title>
-    <description></descr>
+    <description></description>
     <price>120</price>
   </row>
   <row>
     <id>фастфуд-10</id>
     <category>фастфуд</category>
     <title>Сэндвич &#x27;Цезарь&#x27;</title>
-    <description>сэндвичный хлеб, соус цезарь, листья салата, ветчина куриная халяль, томаты, плавленый сыр</descr>
+    <description>сэндвичный хлеб, соус цезарь, листья салата, ветчина куриная халяль, томаты, плавленый сыр</description>
     <price>130</price>
   </row>
 </root> -->
