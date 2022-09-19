@@ -2,6 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import countElsKorzina from "../utils/countElsKorzina"
+import { BsFillGeoAltFill } from "react-icons/bs"
 
 const isActive = ({ isCurrent }) => {
   return isCurrent
@@ -60,6 +61,10 @@ const Navbar = ({ siteTitle, korzina = [] }) => {
             </li>
             <li className="nav-item">
               <ExactNavLink to="/#korzina">Корзина</ExactNavLink>
+            </li>
+            <li className="nav-item geo-point">
+              <BsFillGeoAltFill />
+              Шемордан
             </li>
           </ul>
         </div>
