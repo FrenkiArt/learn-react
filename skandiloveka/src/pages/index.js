@@ -187,9 +187,11 @@ const IndexPage = ({ props }) => {
                 })}
               </div> */}
 
-              <h2 id="picca" className="fw-light mb-4 link-target-with-offset">
-                Пицца
-              </h2>
+              <div class="btn btn-success box-btn-title mb-4">
+                <h2 id="picca" className="fw-light  link-target-with-offset">
+                  Пицца
+                </h2>
+              </div>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -203,12 +205,14 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2
-                id="cold-rolls"
-                className="fw-light mb-4 link-target-with-offset"
-              >
-                Холодные роллы
-              </h2>
+              <div class="btn btn-success box-btn-title mb-4">
+                <h2
+                  id="cold-rolls"
+                  className="fw-light link-target-with-offset"
+                >
+                  Холодные роллы
+                </h2>
+              </div>
 
               <div className="row goods  mb-5">
                 {dataProducts.map(card => {
@@ -222,12 +226,14 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2
-                id="baked-rolls"
-                className="fw-light mb-4 link-target-with-offset"
-              >
-                Запеченные роллы
-              </h2>
+              <div class="btn btn-success box-btn-title mb-4">
+                <h2
+                  id="baked-rolls"
+                  className="fw-light link-target-with-offset"
+                >
+                  Запеченные роллы
+                </h2>
+              </div>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -241,12 +247,11 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2
-                id="hot-rolls"
-                className="fw-light mb-4 link-target-with-offset"
-              >
-                Горячие роллы
-              </h2>
+              <div class="btn btn-success box-btn-title mb-4">
+                <h2 id="hot-rolls" className="fw-light link-target-with-offset">
+                  Горячие роллы
+                </h2>
+              </div>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -260,12 +265,14 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2
-                id="mini-rolls"
-                className="fw-light mb-4 link-target-with-offset"
-              >
-                Мини-роллы
-              </h2>
+              <div class="btn btn-success box-btn-title mb-4">
+                <h2
+                  id="mini-rolls"
+                  className="fw-light link-target-with-offset"
+                >
+                  Мини-роллы
+                </h2>
+              </div>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -279,9 +286,11 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2 id="salats" className="fw-light mb-4 link-target-with-offset">
-                Салаты
-              </h2>
+              <div class="btn btn-success box-btn-title mb-4">
+                <h2 id="salats" className="fw-light link-target-with-offset">
+                  Салаты
+                </h2>
+              </div>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -295,12 +304,11 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2
-                id="fastfood"
-                className="fw-light mb-4 link-target-with-offset"
-              >
-                Фастфуд
-              </h2>
+              <div class="btn btn-success box-btn-title mb-4">
+                <h2 id="fastfood" className="fw-light link-target-with-offset">
+                  Фастфуд
+                </h2>
+              </div>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -314,12 +322,11 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2
-                id="deserts"
-                className="fw-light mb-4 link-target-with-offset"
-              >
-                Десерты
-              </h2>
+              <div class="btn btn-success box-btn-title mb-4">
+                <h2 id="deserts" className="fw-light link-target-with-offset">
+                  Десерты
+                </h2>
+              </div>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -333,9 +340,11 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2 id="cofe" className="fw-light mb-4 link-target-with-offset">
-                Кофе
-              </h2>
+              <div class="btn btn-success box-btn-title mb-4">
+                <h2 id="cofe" className="fw-light link-target-with-offset">
+                  Кофе
+                </h2>
+              </div>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -349,12 +358,14 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2
-                id="milk-cocktails"
-                className="fw-light mb-4 link-target-with-offset"
-              >
-                Коктейли молочные
-              </h2>
+              <div class="btn btn-success box-btn-title mb-4">
+                <h2
+                  id="milk-cocktails"
+                  className="fw-light link-target-with-offset"
+                >
+                  Коктейли молочные
+                </h2>
+              </div>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -368,12 +379,11 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2
-                id="smoothie"
-                className="fw-light mb-4 link-target-with-offset"
-              >
-                Смузи
-              </h2>
+              <div class="btn btn-success box-btn-title mb-4">
+                <h2 id="smoothie" className="fw-light link-target-with-offset">
+                  Смузи
+                </h2>
+              </div>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -387,12 +397,14 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2
-                id="branded-drinks"
-                className="fw-light mb-4 link-target-with-offset"
-              >
-                Фирменные напитки
-              </h2>
+              <div class="btn btn-success box-btn-title mb-4">
+                <h2
+                  id="branded-drinks"
+                  className="fw-light link-target-with-offset"
+                >
+                  Фирменные напитки
+                </h2>
+              </div>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -406,12 +418,14 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <h2
-                id="cold-drinks"
-                className="fw-light mb-4 link-target-with-offset"
-              >
-                Холодные напитки
-              </h2>
+              <div class="btn btn-success box-btn-title mb-4">
+                <h2
+                  id="cold-drinks"
+                  className="fw-light  link-target-with-offset"
+                >
+                  Холодные напитки
+                </h2>
+              </div>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
