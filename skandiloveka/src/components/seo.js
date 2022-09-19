@@ -72,7 +72,7 @@ function Seo({ description, lang, meta, title }) {
           },
           {
             name: `yandex-verification`,
-            content: "198f574d1a53332f",
+            content: "78bc865156bedbf4",
           },
         ].concat(meta)}
       />
