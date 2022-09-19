@@ -24,4 +24,4 @@ setTimeout(() => {
     accurateTrackBounce: true,
     webvisor: true,
   })
-}, 500)
+}, 1000)
