@@ -35,7 +35,7 @@ const IndexPage = ({ props }) => {
             title
             descr {
               raw
-            }
+            } 
             id
             image {
               url
@@ -188,7 +188,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div> */}
 
-              <div class="btn btn-success box-btn-title mb-4">
+              <div className="btn btn-success box-btn-title mb-4">
                 <h2 id="picca" className="fw-light  link-target-with-offset">
                   Пицца
                 </h2>
@@ -206,7 +206,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div class="btn btn-success box-btn-title mb-4">
+              <div className="btn btn-success box-btn-title mb-4">
                 <h2
                   id="cold-rolls"
                   className="fw-light link-target-with-offset"
@@ -227,7 +227,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div class="btn btn-success box-btn-title mb-4">
+              <div className="btn btn-success box-btn-title mb-4">
                 <h2
                   id="baked-rolls"
                   className="fw-light link-target-with-offset"
@@ -248,7 +248,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div class="btn btn-success box-btn-title mb-4">
+              <div className="btn btn-success box-btn-title mb-4">
                 <h2 id="hot-rolls" className="fw-light link-target-with-offset">
                   Роллы горячие
                 </h2>
@@ -266,7 +266,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div class="btn btn-success box-btn-title mb-4">
+              <div className="btn btn-success box-btn-title mb-4">
                 <h2
                   id="mini-rolls"
                   className="fw-light link-target-with-offset"
@@ -287,7 +287,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div class="btn btn-success box-btn-title mb-4">
+              <div className="btn btn-success box-btn-title mb-4">
                 <h2 id="salats" className="fw-light link-target-with-offset">
                   Салаты
                 </h2>
@@ -305,7 +305,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div class="btn btn-success box-btn-title mb-4">
+              <div className="btn btn-success box-btn-title mb-4">
                 <h2 id="fastfood" className="fw-light link-target-with-offset">
                   Фастфуд
                 </h2>
@@ -323,7 +323,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div class="btn btn-success box-btn-title mb-4">
+              <div className="btn btn-success box-btn-title mb-4">
                 <h2 id="deserts" className="fw-light link-target-with-offset">
                   Десерты
                 </h2>
@@ -341,7 +341,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div class="btn btn-success box-btn-title mb-4">
+              <div className="btn btn-success box-btn-title mb-4">
                 <h2 id="cofe" className="fw-light link-target-with-offset">
                   Кофе
                 </h2>
@@ -359,7 +359,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div class="btn btn-success box-btn-title mb-4">
+              <div className="btn btn-success box-btn-title mb-4">
                 <h2
                   id="milk-cocktails"
                   className="fw-light link-target-with-offset"
@@ -380,7 +380,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div class="btn btn-success box-btn-title mb-4">
+              <div className="btn btn-success box-btn-title mb-4">
                 <h2 id="smoothie" className="fw-light link-target-with-offset">
                   Смузи
                 </h2>
@@ -398,7 +398,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div class="btn btn-success box-btn-title mb-4">
+              <div className="btn btn-success box-btn-title mb-4">
                 <h2
                   id="branded-drinks"
                   className="fw-light link-target-with-offset"
@@ -419,7 +419,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div class="btn btn-success box-btn-title mb-4">
+              <div className="btn btn-success box-btn-title mb-4">
                 <h2
                   id="cold-drinks"
                   className="fw-light  link-target-with-offset"
@@ -524,7 +524,7 @@ const IndexPage = ({ props }) => {
 
                   <div className="input-group input-group-sm mb-2">
                     <textarea
-                      class="form-control"
+                      className="form-control"
                       aria-label="Оставить комментарий"
                       placeholder="Оставить комментарий"
                       name="comment"

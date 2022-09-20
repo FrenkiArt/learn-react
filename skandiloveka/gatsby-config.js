@@ -7,13 +7,10 @@ module.exports = {
     title: `SkandiLoveKa`,
     description: `Вкусная еда с доставкой. Жизнь лучше, люди счастливее 🤍. Кафе семейного формата 🌿😊. Работаем каждый день с 10:00 до 22:00. Адрес: Шемордан, ул.М.Горького, дом 1 'Г'`,
     author: `@artywork`,
+    siteUrl: "https://skandiloveka.ru/",
   },
   flags: {
     DEV_SSR: true,
-  },
-  siteMetadata: {
-    // If you didn't use the resolveSiteUrl option this needs to be set
-    siteUrl: "https://skandiloveka.gatsbyjs.io/",
   },
   plugins: [
     `gatsby-plugin-sitemap`,
