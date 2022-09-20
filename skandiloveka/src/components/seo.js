@@ -79,6 +79,7 @@ function Seo({ description, lang, meta, title }) {
 
       <Helmet>
         <script async src="yandex.metrica.js" type="text/javascript" />
+        <script async src="vk.pixel.js" type="text/javascript" />
       </Helmet>
     </>
   )
