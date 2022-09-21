@@ -12,9 +12,7 @@
           <category id="1">пицца</category>
           <category id="2">холодные-роллы</category>
           <category id="3">запеченные-роллы</category>
-          <category id="4">горячие-роллы</category> 
-            <!-- <category id="1">Бытовая техника</category>
-            <category id="10" parentId="1">Мелкая техника для кухни</category> -->
+          <category id="4">горячие-роллы</category>  
         </categories>
         <delivery-options>
             <!-- <option cost="200" days="1"/> -->
@@ -184,136 +182,136 @@
                 <currencyId>RUR</currencyId>
                 <categoryId>3</categoryId>
                 <name>Со снежным крабом</name>
-    <description>рис, икра &quot;Масаrа&quot;, авокадо, снежный краб в остром соусе &quot;Спайси&quot;, сыр &quot;Мацарелла&quot;, фирменная шапочка</description>
-    <price>310</price>
+                <description>рис, икра &quot;Масаrа&quot;, авокадо, снежный краб в остром соусе &quot;Спайси&quot;, сыр &quot;Мацарелла&quot;, фирменная шапочка</description>
+                <price>310</price>
             </offer> 
             <offer id="запеченные-роллы-2"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>3</categoryId>
                 <name>С копченой курицей</name>
-    <description>рис, творожный сыр, копченое куриное филе халяль, листья салата, сыр &quot;Мацарелла&quot;, кунжут, фирменная шапочка</description>
-    <price>310</price>
+              <description>рис, творожный сыр, копченое куриное филе халяль, листья салата, сыр &quot;Мацарелла&quot;, кунжут, фирменная шапочка</description>
+              <price>310</price>
             </offer> 
             <offer id="запеченные-роллы-3"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>3</categoryId>
                 <name>Премиум</name>
-    <description>рис, сливочный сыр, авокадо, норвежский лосось в кисло-соленом соусе, сыр &quot;Мацарелла&quot;, икра красная</description>
-    <price>350</price>
+                <description>рис, сливочный сыр, авокадо, норвежский лосось в кисло-соленом соусе, сыр &quot;Мацарелла&quot;, икра красная</description>
+                <price>350</price>
             </offer> 
             <offer id="запеченные-роллы-4"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>3</categoryId>
                 <name>С угрем</name>
-    <description>рис, икра &quot;Масаrа&quot;, сливочный сыр, угорь жареный, сыр &quot;Мацарелла&quot;, соус &quot; Унаги&quot;</description>
-    <price>320</price>
+                <description>рис, икра &quot;Масаrа&quot;, сливочный сыр, угорь жареный, сыр &quot;Мацарелла&quot;, соус &quot; Унаги&quot;</description>
+                <price>320</price>
             </offer> 
             <offer id="запеченные-роллы-5"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>3</categoryId>
                 <name>Феникс</name>
-    <description>рис, икра &quot;Масаrа&quot;, куриное филе, сливочный сыр, снежный краб, сыр &quot;Мацарелла&quot;, соус &quot;Спайси&quot;</description>
-    <price>330</price>
+                <description>рис, икра &quot;Масаrа&quot;, куриное филе, сливочный сыр, снежный краб, сыр &quot;Мацарелла&quot;, соус &quot;Спайси&quot;</description>
+                <price>330</price>
             </offer> 
             <offer id="запеченные-роллы-6"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>3</categoryId>
                 <name>С креветкой</name>
-    <description>рис, тигровые креветки, сыр творожный, икра &quot;Масаrа&quot;, сыр &quot;Мацарелла&quot;, помидорки &quot;Черри&quot;</description>
-    <price>330</price>
+                <description>рис, тигровые креветки, сыр творожный, икра &quot;Масаrа&quot;, сыр &quot;Мацарелла&quot;, помидорки &quot;Черри&quot;</description>
+                <price>330</price>
             </offer> 
             <offer id="запеченные-роллы-7"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>3</categoryId>
                 <name>С тунцом</name>
-    <description>рис, тунец, авокадо, огурец, икра &quot;Масаrа&quot;, лук зеленый, фирменная шапочка</description>
-    <price>340</price>
+                <description>рис, тунец, авокадо, огурец, икра &quot;Масаrа&quot;, лук зеленый, фирменная шапочка</description>
+                <price>340</price>
             </offer> 
             <offer id="горячие-роллы-1"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>4</categoryId>
                 <name>Скандинава</name>
-    <description>рис, норвежский лосось, сливочный сыр, авокадо, темпурный кляр, соус &quot;Унаги&quot;, соус &quot;Спайси&quot;</description>
-    <price>330</price>
+                <description>рис, норвежский лосось, сливочный сыр, авокадо, темпурный кляр, соус &quot;Унаги&quot;, соус &quot;Спайси&quot;</description>
+                <price>330</price>
             </offer> 
             <offer id="горячие-роллы-2"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>4</categoryId>
                 <name>Нэко</name>
-    <description>рис, снежный краб, сливочный сыр, огурец, темпурный кляр, соус &quot;Унаги&quot;, соус &quot;Спайси&quot;</description>
-    <price>320</price>
+                <description>рис, снежный краб, сливочный сыр, огурец, темпурный кляр, соус &quot;Унаги&quot;, соус &quot;Спайси&quot;</description>
+                <price>320</price>
             </offer> 
             <offer id="горячие-роллы-3"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>4</categoryId>
                 <name>Унаги</name>
-    <description>рис, копченый угорь, сливочный сыр, огурец, темпурный кляр, соус &quot;Унаги&quot;</description>
-    <price>320</price>
+                <description>рис, копченый угорь, сливочный сыр, огурец, темпурный кляр, соус &quot;Унаги&quot;</description>
+                <price>320</price>
             </offer> 
             <offer id="горячие-роллы-4"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>4</categoryId>
                 <name>Инь Янь</name>
-    <description>рис, норвежский лосось, сливочный сыр, копченый угорь, темпурный кляр, соус &quot;Унаги&quot;, кунжут</description>
-    <price>340</price>
+                <description>рис, норвежский лосось, сливочный сыр, копченый угорь, темпурный кляр, соус &quot;Унаги&quot;, кунжут</description>
+                <price>340</price>
             </offer> 
             <offer id="горячие-роллы-5"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>4</categoryId>
                 <name>Горячий с креветкой</name>
-    <description>рис, тигровые креветки, сливочный сыр, авокадо, огурец, темпурный кляр, соус &quot;Спайси&quot;</description>
-    <price>320</price>
+                <description>рис, тигровые креветки, сливочный сыр, авокадо, огурец, темпурный кляр, соус &quot;Спайси&quot;</description>
+                <price>320</price>
             </offer> 
             <offer id="горячие-роллы-6"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>4</categoryId>
                 <name>Горячий с курицей</name>
-    <description>рис, куриное филе , огурец, соус &quot;Спайси&quot;, темпурный кляр</description>
-    <price>290</price>
+                <description>рис, куриное филе , огурец, соус &quot;Спайси&quot;, темпурный кляр</description>
+                <price>290</price>
             </offer> 
             <offer id="горячие-роллы-7"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>4</categoryId>
                 <name>Цезарь в темпуре</name>
-    <description>рис, томат, листья салата, куриное филе Халяль, темпурный кляр, соус &quot;Цезарь&quot;, сыр &quot;Пармезан&quot;</description>
-    <price>310</price>
+                <description>рис, томат, листья салата, куриное филе Халяль, темпурный кляр, соус &quot;Цезарь&quot;, сыр &quot;Пармезан&quot;</description>
+                <price>310</price>
             </offer> 
             <offer id="горячие-роллы-8"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>4</categoryId>
                 <name>Кентуки</name>
-    <description>рис, копченое куриное филе, сыр &quot;Мацарелла&quot;, болгарский перец, темпурный кляр, соус &quot;Цезарь&quot;, соус &quot;Терияки&quot;</description>
-    <price>310</price>
+                <description>рис, копченое куриное филе, сыр &quot;Мацарелла&quot;, болгарский перец, темпурный кляр, соус &quot;Цезарь&quot;, соус &quot;Терияки&quot;</description>
+                <price>310</price>
             </offer> 
             <offer id="горячие-роллы-9"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>4</categoryId>
                 <name>Вулкан</name>
-    <description>рис, снежный краб, творожный сыр, куриное филе, темпурный кляр, соус &quot;Спайси&quot;, икра &quot;Масаro&quot;</description>
-    <price>320</price>
+                <description>рис, снежный краб, творожный сыр, куриное филе, темпурный кляр, соус &quot;Спайси&quot;, икра &quot;Масаro&quot;</description>
+                <price>320</price>
             </offer> 
             <offer id="горячие-роллы-10"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
                 <categoryId>4</categoryId>
                 <name>Магуро</name>
-    <description>рис, тунец, сливочный сыр, авокадо, зеленый лук, темпурный кляр, кунжут, соус &quot;Унаги&quot;</description>
-    <price>340</price>
+                <description>рис, тунец, сливочный сыр, авокадо, зеленый лук, темпурный кляр, кунжут, соус &quot;Унаги&quot;</description>
+                <price>340</price>
             <!-- </offer> <offer id="горячие-роллы-"> 
                 <url>https://skandiloveka.ru</url> 
                 <currencyId>RUR</currencyId>
