@@ -188,11 +188,11 @@ const IndexPage = ({ props }) => {
                 })}
               </div> */}
 
-              <div className="btn btn-success box-btn-name mb-4">
+              <a href="#picca" className="btn btn-success box-btn-name mb-4">
                 <h2 id="picca" className="fw-light  link-target-with-offset">
                   Пицца
                 </h2>
-              </div>
+              </a>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -206,14 +206,17 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div className="btn btn-success box-btn-name mb-4">
+              <a
+                href="#cold-rolls"
+                className="btn btn-success box-btn-name mb-4"
+              >
                 <h2
                   id="cold-rolls"
                   className="fw-light link-target-with-offset"
                 >
                   Роллы холодные
                 </h2>
-              </div>
+              </a>
 
               <div className="row goods  mb-5">
                 {dataProducts.map(card => {
@@ -227,14 +230,17 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div className="btn btn-success box-btn-name mb-4">
+              <a
+                href="#baked-rolls"
+                className="btn btn-success box-btn-name mb-4"
+              >
                 <h2
                   id="baked-rolls"
                   className="fw-light link-target-with-offset"
                 >
                   Роллы запеченные
                 </h2>
-              </div>
+              </a>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -248,11 +254,14 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div className="btn btn-success box-btn-name mb-4">
+              <a
+                href="#hot-rolls"
+                className="btn btn-success box-btn-name mb-4"
+              >
                 <h2 id="hot-rolls" className="fw-light link-target-with-offset">
                   Роллы горячие
                 </h2>
-              </div>
+              </a>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -266,14 +275,17 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div className="btn btn-success box-btn-name mb-4">
+              <a
+                href="#mini-rolls"
+                className="btn btn-success box-btn-name mb-4"
+              >
                 <h2
                   id="mini-rolls"
                   className="fw-light link-target-with-offset"
                 >
                   Роллы-мини
                 </h2>
-              </div>
+              </a>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -287,11 +299,11 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div className="btn btn-success box-btn-name mb-4">
+              <a href="#salats" className="btn btn-success box-btn-name mb-4">
                 <h2 id="salats" className="fw-light link-target-with-offset">
                   Салаты
                 </h2>
-              </div>
+              </a>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -305,11 +317,11 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div className="btn btn-success box-btn-name mb-4">
+              <a href="#fastfood" className="btn btn-success box-btn-name mb-4">
                 <h2 id="fastfood" className="fw-light link-target-with-offset">
                   Фастфуд
                 </h2>
-              </div>
+              </a>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -323,11 +335,11 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div className="btn btn-success box-btn-name mb-4">
+              <a href="deserts" className="btn btn-success box-btn-name mb-4">
                 <h2 id="deserts" className="fw-light link-target-with-offset">
                   Десерты
                 </h2>
-              </div>
+              </a>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -341,11 +353,11 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div className="btn btn-success box-btn-name mb-4">
+              <a href="cofe" className="btn btn-success box-btn-name mb-4">
                 <h2 id="cofe" className="fw-light link-target-with-offset">
                   Кофе
                 </h2>
-              </div>
+              </a>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -359,14 +371,17 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div className="btn btn-success box-btn-name mb-4">
+              <a
+                href="#milk-cocktails"
+                className="btn btn-success box-btn-name mb-4"
+              >
                 <h2
                   id="milk-cocktails"
                   className="fw-light link-target-with-offset"
                 >
                   Коктейли молочные
                 </h2>
-              </div>
+              </a>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -380,11 +395,11 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div className="btn btn-success box-btn-name mb-4">
+              <a href="#smoothie" className="btn btn-success box-btn-name mb-4">
                 <h2 id="smoothie" className="fw-light link-target-with-offset">
                   Смузи
                 </h2>
-              </div>
+              </a>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -398,14 +413,17 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div className="btn btn-success box-btn-name mb-4">
+              <a
+                href="#branded-drinks"
+                className="btn btn-success box-btn-name mb-4"
+              >
                 <h2
                   id="branded-drinks"
                   className="fw-light link-target-with-offset"
                 >
                   Фирменные напитки
                 </h2>
-              </div>
+              </a>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -419,14 +437,17 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <div className="btn btn-success box-btn-name mb-4">
+              <a
+                href="#cold-drinks"
+                className="btn btn-success box-btn-name mb-4"
+              >
                 <h2
                   id="cold-drinks"
                   className="fw-light  link-target-with-offset"
                 >
                   Холодные напитки
                 </h2>
-              </div>
+              </a>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
@@ -440,6 +461,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
             </div>
+
             <div className="col-md-4 col-lg-3 ">
               <div id="korzina" className="aside-sticky">
                 <h2 className="fw-light mb-4 position-relative">

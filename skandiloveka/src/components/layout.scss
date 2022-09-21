@@ -138,6 +138,8 @@ html {
 }
 
 .link-target-with-offset {
+  pointer-events: none;
+
   &:before {
     content: "";
     display: block;
@@ -197,7 +199,6 @@ html {
 }
 
 .box-btn-name {
-  pointer-events: none;
   text-align: left;
   width: 100%;
 }
