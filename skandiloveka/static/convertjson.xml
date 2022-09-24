@@ -394,7 +394,7 @@
         </description>
         <price>150</price>
       </offer>
-      <offer id="салаты-1">
+      <offer id="салаты-2">
         <url>https://skandiloveka.ru</url>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
@@ -403,7 +403,7 @@
           черри, копченое куриное филе</description>
         <price>190</price>
       </offer>
-      <offer id="салаты-1">
+      <offer id="салаты-3">
         <url>https://skandiloveka.ru</url>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
