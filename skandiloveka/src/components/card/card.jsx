@@ -14,12 +14,20 @@ const Card = ({ dto, addToCart }) => {
       /> */}
 
       <div className="card-body">
-        <h4 className="card-title fw-bold">{dto.title}</h4>
+        <h4 className="card-title fw-bold">
+          {dto.title ||
+            dto?.defaultProductVariant?.title ||
+            "Текст по умолчанию"}
+        </h4>
+
         <p className="card-price fw-bold">
-          <span>Цена: {dto.price} ₽</span>
+          <span>{dto?.slug?.current}</span>
+          <span>Цена: {dto.price || dto?.defaultProductVariant?.price} ₽</span>
           {dto.weight ? <span> / {dto.weight} </span> : ""}
         </p>
-        <p className="card-text">{dto.descr}</p>
+        <p className="card-text">
+          {dto.descr || dto?.defaultProductVariant?.composition}
+        </p>
         <button
           className="btn btn-primary"
           onClick={() => {

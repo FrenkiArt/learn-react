@@ -49,7 +49,7 @@ function uniSendForm(e) {
   e.preventDefault()
 
   const baseURL = "https://api.telegram.org/bot"
-  const token = "5699075377:AAEo7_SBKlsRSV59t2X11pwdziVEcVmboSU"
+  const token = "5619564242:AAHTa6dvzRJFTmhdwQzVdaVTapNbCiUYwro"
   const idChat = "433021023"
 
   const message = createMessage(e)
