@@ -214,7 +214,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div> */}
 
-              <div>
+              {/* <div>
                 <h2>Test</h2>
 
                 <div className="row goods mb-5">
@@ -227,7 +227,7 @@ const IndexPage = ({ props }) => {
                     )
                   })}
                 </div>
-              </div>
+              </div> */}
 
               <a href="#picca" className="btn btn-success box-btn-name mb-4">
                 <h2 id="picca" className="fw-light  link-target-with-offset">
