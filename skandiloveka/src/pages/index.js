@@ -20,58 +20,28 @@ const IndexPage = ({ props }) => {
   const [shiping, setShiping] = React.useState("")
   const [successMsg, setSuccessMsg] = React.useState("")
   const dataProducts = dataAllProducts
-  const [apiProducts, setApiProducts] = React.useState([])
 
   const baseURL = "https://api.telegram.org/bot"
   const token = "5619564242:AAHTa6dvzRJFTmhdwQzVdaVTapNbCiUYwro"
   const idChatOrders = "-723744791"
   /* const idChatArchy = "1012193" */
 
-  const PROJECT_ID = "c677x2dv"
-  const DATASET = "production"
-  const QUERY = encodeURIComponent('*[_type == "product"]')
-  const URL = `https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY}`
+  const getJson = () => {
+    const url =
+      "https://spreadsheets.google.com/feeds/list/1om8wLnoF-m3EF1SnvJSDhSiWIsDn9QdmNROFc2UfZmo/od6/public/values?alt=json"
+    const url2 =
+      "https://docs.google.com/spreadsheets/d/1om8wLnoF-m3EF1SnvJSDhSiWIsDn9QdmNROFc2UfZmo/"
 
-  const fetchDB = () => {
-    fetch(URL)
-      .then(res => res.json())
-      .then(({ result }) => {
-        console.log("-----success======")
-        // get the list element, and the first item
+    const credentals =
+      "57639373488-kfm7k1vorhe9ls5e3eqfd09qqqkdelbd.apps.googleusercontent.com"
 
-        if (result.length > 0) {
-          // remove the placeholder content
-          setApiProducts(result)
+    /* fetch(url)
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error(error)) */
 
-          console.log(JSON.stringify(result, null, 2))
-        }
-      })
-      .catch(err => console.error(err))
+    fetch(url2).then(response => console.log(response))
   }
-
-  /* const allProducts = useStaticQuery(graphql`
-    query MyQuery {
-      allContentfulProduct {
-        edges {
-          node {
-            category
-            price
-            title
-            descr {
-              raw
-            } 
-            id
-            image {
-              url
-              title
-            }
-          }
-        }
-      }
-    }
-  `) */
-
-  /* const arrAllProducts = allProducts.allContentfulProduct.edges */
 
   const updateAmount = () => {
     let newAmount = 0
@@ -166,7 +136,7 @@ const IndexPage = ({ props }) => {
 
   React.useEffect(() => {
     checkLocaleStorage()
-    fetchDB()
+    getJson()
   }, [])
 
   React.useEffect(() => {
@@ -196,38 +166,6 @@ const IndexPage = ({ props }) => {
                 <a href="#branded-drinks">Фирменные-напитки</a>
                 <a href="#cold-drinks">Холодные-напитки</a>
               </div>
-
-              {/* <div className="row goods mb-5">
-                {arrAllProducts.map(card => {
-                  
-                   return card.node.category === "Пицца" ? (
-                    <div
-                      className="col-12 col-sm-6 col-lg-4"
-                      key={card.node.id}
-                    >
-                      <Card dto={card.node} addToCart={addToCart} />
-                    </div>
-                  ) : (
-                    ""
-                  )
-                   {"data":{},"content":[{"data":{},"content":[{"data":{},"marks":[],"value":"сыр \"Моцарелла\", куриное филе халяль, шампиньоны, тушеные в сливках, томаты, маслины, томатный соус\n\n","nodeType":"text"}],"nodeType":"paragraph"}],"nodeType":"document"} 
-                })}
-              </div> */}
-
-              {/* <div>
-                <h2>Test</h2>
-
-                <div className="row goods mb-5">
-                  {console.log(apiProducts)}
-                  {apiProducts.map(card => {
-                    return (
-                      <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
-                        <Card dto={card} addToCart={addToCart} />
-                      </div>
-                    )
-                  })}
-                </div>
-              </div> */}
 
               <a href="#picca" className="btn btn-success box-btn-name mb-4">
                 <h2 id="picca" className="fw-light  link-target-with-offset">
