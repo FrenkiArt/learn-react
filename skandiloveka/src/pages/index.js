@@ -33,7 +33,7 @@ const IndexPage = ({ props }) => {
     try {
       const response = await fetch(url)
       const data = await response.json()
-      console.log(data.goods)
+      // console.log(data.goods)
 
       setDataProducts(data.goods)
       return data.goods
