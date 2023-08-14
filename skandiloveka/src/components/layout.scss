@@ -116,7 +116,7 @@ html {
   border-radius: var(--bs-list-group-border-radius);
   border: var(--bs-list-group-border-width) solid
     var(--bs-list-group-border-color);
-  position: sticky;
+  position: fixed;
   top: 55px;
   display: flex;
   flex-wrap: wrap;
@@ -126,6 +126,14 @@ html {
   z-index: 3;
   font-size: 1rem;
   flex-direction: row;
+  transform: translate(0, -100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+
+  @media (min-width: 576px) {
+    transform: translate(0, 0);
+
+    position: sticky;
+  }
 
   a {
     color: #000000;
@@ -137,24 +145,60 @@ html {
   }
 }
 
+.fast-links-toggler {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  transform: translate(-1rem, 3rem);
+  transition: transform 0.3s ease;
+
+  @media (min-width: 576px) {
+    display: none;
+  }
+
+  // .fast-links-toggler__show
+  &__show {
+    display: inline-block;
+  }
+
+  // .fast-links-toggler__hide
+  &__hide {
+    display: none;
+  }
+}
+
+.fast-links.active {
+  transform: translate(0, 0);
+
+  .fast-links-toggler {
+    transform: translate(-1rem, 2.5rem);
+  }
+  .fast-links-toggler__show {
+    display: none;
+  }
+  .fast-links-toggler__hide {
+    display: inline-block;
+  }
+}
+
 .link-target-with-offset {
   pointer-events: none;
 
   &:before {
     content: "";
     display: block;
-    height: 220px;
-    margin: -220px 0 0;
+    height: 260px;
+    margin: -260px 0 0;
     pointer-events: none;
 
     @media (min-width: 350px) {
-      height: 200px;
-      margin: -200px 0 0;
+      height: 245px;
+      margin: -245px 0 0;
     }
 
     @media (min-width: 400px) {
-      height: 180px;
-      margin: -180px 0 0;
+      height: 195px;
+      margin: -195px 0 0;
     }
 
     @media (min-width: 576px) {

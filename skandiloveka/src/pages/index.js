@@ -19,28 +19,27 @@ const IndexPage = ({ props }) => {
   const [address, setAddress] = React.useState("")
   const [shiping, setShiping] = React.useState("")
   const [successMsg, setSuccessMsg] = React.useState("")
-  const dataProducts = dataAllProducts
+  const [dataProducts, setDataProducts] = React.useState(dataAllProducts)
 
   const baseURL = "https://api.telegram.org/bot"
   const token = "5619564242:AAHTa6dvzRJFTmhdwQzVdaVTapNbCiUYwro"
   const idChatOrders = "-723744791"
   /* const idChatArchy = "1012193" */
 
-  const getJson = () => {
+  async function getJson() {
     const url =
-      "https://spreadsheets.google.com/feeds/list/1om8wLnoF-m3EF1SnvJSDhSiWIsDn9QdmNROFc2UfZmo/od6/public/values?alt=json"
-    const url2 =
-      "https://docs.google.com/spreadsheets/d/1om8wLnoF-m3EF1SnvJSDhSiWIsDn9QdmNROFc2UfZmo/"
+      "https://script.google.com/macros/s/AKfycbyygVKNjO7FW4aMTdIU6Lvir43iyUewBOFvWgbAAHvA2BtJtWzM7M-Z_XyDN8h_2mjErw/exec"
 
-    const credentals =
-      "57639373488-kfm7k1vorhe9ls5e3eqfd09qqqkdelbd.apps.googleusercontent.com"
+    try {
+      const response = await fetch(url)
+      const data = await response.json()
+      console.log(data.goods)
 
-    /* fetch(url)
-      .then(response => response.json())
-      .then(data => console.log(data))
-      .catch(error => console.error(error)) */
-
-    fetch(url2).then(response => console.log(response))
+      setDataProducts(data.goods)
+      return data.goods
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   const updateAmount = () => {
@@ -143,6 +142,10 @@ const IndexPage = ({ props }) => {
     updateAmount()
   }, [korzina])
 
+  const fastLinksHandler = () => {
+    document.querySelector(".fast-links").classList.toggle("active")
+  }
+
   return (
     <Layout korzina={korzina}>
       <Seo title="SkandiLoveKa" />
@@ -153,6 +156,7 @@ const IndexPage = ({ props }) => {
             <div className="col-md-8 col-lg-9">
               <div className="list-group fast-links mb-4">
                 <a href="#picca">Пицца</a>
+                <a href="#fried-rolls">Роллы-жаренные</a>
                 <a href="#cold-rolls">Роллы-холодные</a>
                 <a href="#baked-rolls">Роллы-запеченные</a>
                 <a href="#hot-rolls">Роллы-горячие</a>
@@ -165,6 +169,16 @@ const IndexPage = ({ props }) => {
                 <a href="#smoothie">Смузи</a>
                 <a href="#branded-drinks">Фирменные-напитки</a>
                 <a href="#cold-drinks">Холодные-напитки</a>
+                <a href="#sets">Сеты</a>
+
+                <button
+                  onClick={fastLinksHandler}
+                  className="btn btn-info fast-links-toggler"
+                  type="button"
+                >
+                  <span className="fast-links-toggler__show">Быстрое меню</span>
+                  <span className="fast-links-toggler__hide">Скрыть меню</span>
+                </button>
               </div>
 
               <a href="#picca" className="btn btn-success box-btn-name mb-4">
@@ -176,6 +190,30 @@ const IndexPage = ({ props }) => {
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
                   return card.category === "пицца" ? (
+                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
+              </div>
+
+              <a
+                href="#fried-rolls"
+                className="btn btn-success box-btn-name mb-4"
+              >
+                <h2
+                  id="fried-rolls"
+                  className="fw-light link-target-with-offset"
+                >
+                  Горячие Шеф-роллы (жареные)
+                </h2>
+              </a>
+
+              <div className="row goods  mb-5">
+                {dataProducts.map(card => {
+                  return card.category === "жаренные-роллы" ? (
                     <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
@@ -431,6 +469,24 @@ const IndexPage = ({ props }) => {
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
                   return card.category === "холодные-напитки" ? (
+                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
+              </div>
+
+              <a href="#sets" className="btn btn-success box-btn-name mb-4">
+                <h2 id="sets" className="fw-light  link-target-with-offset">
+                  Сеты
+                </h2>
+              </a>
+
+              <div className="row goods mb-5">
+                {dataProducts.map(card => {
+                  return card.category === "сеты" ? (
                     <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
