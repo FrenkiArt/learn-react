@@ -11,9 +11,12 @@ const Footer = () => {
             <div className="col col-md-3">
               <div className="footer__copyright">© 2024</div>
             </div>
-            <div className="col col-md-3 offset-md-6">
+            <div className="col col-md-4 offset-md-5">
               <div className="footer__socials">
-                <a className="nav-link fw-bold" href="tel:+79050255407">
+                <a
+                  className="nav-link fw-bold text-nowrap"
+                  href="tel:+79050255407"
+                >
                   +7 (905) 025 54 07
                 </a>
 
