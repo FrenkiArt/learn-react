@@ -246,3 +246,15 @@ html {
   text-align: left;
   width: 100%;
 }
+
+.phone-link {
+  font-weight: bold;
+  font-size: 18px;
+  opacity: 1;
+  color: #fff;
+
+  &:hover,
+  &:focus-visible {
+    color: #157347;
+  }
+}

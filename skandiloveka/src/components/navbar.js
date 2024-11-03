@@ -66,6 +66,12 @@ const Navbar = ({ siteTitle, korzina = [] }) => {
               <BsFillGeoAltFill />
               Шемордан
             </li>
+
+            <li className="nav-item">
+              <a href="tel:+79050255407" className="nav-link phone-link">
+                +7 (905) 025 54 07
+              </a>
+            </li>
           </ul>
         </div>
       </div>
