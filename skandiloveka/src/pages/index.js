@@ -701,9 +701,11 @@ const IndexPage = ({ props }) => {
                     ""
                   )}
 
-                  <small className="lh-sm">
-                    Для подтверждения заказа Вам перезвонят
-                  </small>
+                  <div>
+                    <small className="lh-sm">
+                      Для подтверждения заказа Вам перезвонят
+                    </small>
+                  </div>
                 </form>
 
                 {successMsg !== "" ? (
