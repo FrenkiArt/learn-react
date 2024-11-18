@@ -5,7 +5,7 @@ const Map = () => {
     <div className="wrap-map">
       <div id="map" className="map">
         <iframe
-          src="https://yandex.ru/map-widget/v1/-/CCUVVEDmkB"
+          src="https://yandex.ru/map-widget/v1/-/CCUVVEDmkB?scroll=false"
           width="560"
           height="400"
           frameBorder="1"

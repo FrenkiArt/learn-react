@@ -1,6 +1,6 @@
 import * as React from "react"
 import "./footer.scss"
-import { FaVk, FaInstagram } from "react-icons/fa"
+import { FaVk, FaInstagram, FaTelegram, FaWhatsapp } from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -19,16 +19,15 @@ const Footer = () => {
                 >
                   +7 (905) 025 54 07
                 </a>
-
                 <a
                   href="https://vk.com/skandiloveka"
-                  className="footer__social"
+                  className="footer__social d-none"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {" "}
                   <FaVk />
-                </a>
+                </a>{" "}
                 <a
                   href="https://www.instagram.com/skandiloveka/"
                   className="footer__social"
@@ -37,6 +36,24 @@ const Footer = () => {
                 >
                   {" "}
                   <FaInstagram />
+                </a>
+                <a
+                  href="t.me/SkandiLove"
+                  className="footer__social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <FaTelegram />
+                </a>
+                <a
+                  href="wa.me/message/4RO6FX2ILJT5P1"
+                  className="footer__social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <FaWhatsapp />
                 </a>
               </div>
             </div>

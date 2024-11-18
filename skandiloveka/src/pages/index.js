@@ -156,20 +156,21 @@ const IndexPage = ({ props }) => {
             <div className="col-md-8 col-lg-9">
               <div className="list-group fast-links mb-4">
                 <a href="#picca">Пицца</a>
-                <a href="#fried-rolls">Роллы-жаренные</a>
+                <a href="#fried-rolls">Горячие Шеф роллы</a>
                 <a href="#cold-rolls">Роллы-холодные</a>
                 <a href="#baked-rolls">Роллы-запеченные</a>
-                <a href="#hot-rolls">Роллы-горячие</a>
+                <a href="#hot-rolls">Горячие роллы</a>
                 <a href="#mini-rolls">Роллы-мини</a>
                 <a href="#salats">Салаты</a>
                 <a href="#fastfood">Фастфуд</a>
                 <a href="#deserts">Десерты</a>
-                <a href="#cofe">Кофе</a>
+                <a href="#cofe">Горячие напитки</a>
                 <a href="#milk-cocktails">Коктейли-молочные</a>
                 <a href="#smoothie">Смузи</a>
                 <a href="#branded-drinks">Фирменные-напитки</a>
                 <a href="#cold-drinks">Холодные-напитки</a>
                 <a href="#sets">Сеты</a>
+                <a href="#combo">Комбо набор</a>
 
                 <button
                   onClick={fastLinksHandler}
@@ -207,13 +208,13 @@ const IndexPage = ({ props }) => {
                   id="fried-rolls"
                   className="fw-light link-target-with-offset"
                 >
-                  Горячие Шеф-роллы (жареные)
+                  Горячие Шеф роллы
                 </h2>
               </a>
 
               <div className="row goods  mb-5">
                 {dataProducts.map(card => {
-                  return card.category === "жаренные-роллы" &&
+                  return card.category === "горячие-шеф-роллы" &&
                     card.show != 0 ? (
                     <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
@@ -279,7 +280,7 @@ const IndexPage = ({ props }) => {
                 className="btn btn-success box-btn-name mb-4"
               >
                 <h2 id="hot-rolls" className="fw-light link-target-with-offset">
-                  Роллы горячие
+                  Горячие роллы
                 </h2>
               </a>
 
@@ -375,13 +376,14 @@ const IndexPage = ({ props }) => {
 
               <a href="cofe" className="btn btn-success box-btn-name mb-4">
                 <h2 id="cofe" className="fw-light link-target-with-offset">
-                  Кофе
+                  Горячие напитки
                 </h2>
               </a>
 
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
-                  return card.category === "кофе" && card.show != 0 ? (
+                  return card.category === "горячие-напитки" &&
+                    card.show != 0 ? (
                     <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
@@ -500,6 +502,29 @@ const IndexPage = ({ props }) => {
                     ""
                   )
                 })}
+              </div>
+
+              <a href="#combo" className="btn btn-success box-btn-name mb-4">
+                <h2 id="combo" className="fw-light  link-target-with-offset">
+                  Комбо набор
+                </h2>
+              </a>
+
+              <div className="row goods mb-5">
+                {dataProducts.map(card => {
+                  return card.category === "комбо-набор" && card.show != 0 ? (
+                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
+
+                <div className="col-12">
+                  ! По Вашему желанию к комбо набору можно приобрести сувенирную
+                  игрушку ❤️
+                </div>
               </div>
             </div>
 
@@ -675,6 +700,10 @@ const IndexPage = ({ props }) => {
                   ) : (
                     ""
                   )}
+
+                  <small className="lh-sm">
+                    Для подтверждения заказа Вам перезвонят
+                  </small>
                 </form>
 
                 {successMsg !== "" ? (
