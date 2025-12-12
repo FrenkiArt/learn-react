@@ -36,6 +36,7 @@ const IndexPage = ({ props }) => {
       // console.log(data.goods)
 
       setDataProducts(data.goods)
+      console.log(dataProducts)
       return data.goods
     } catch (error) {
       console.error(error)
