@@ -28,12 +28,12 @@ const IndexPage = ({ props }) => {
 
   async function getJson() {
     const url =
-      "https://script.google.com/macros/s/AKfycbyygVKNjO7FW4aMTdIU6Lvir43iyUewBOFvWgbAAHvA2BtJtWzM7M-Z_XyDN8h_2mjErw/exec"
+      "https://script.google.com/macros/s/AKfycbyhLls5eEGpsZx29Q3rE7V7jjtgSV01ZiwfFgR5_yecDnle6A9Cz5wrsNLQNJhH1XxApA/exec"
 
     try {
       const response = await fetch(url)
       const data = await response.json()
-      // console.log(data.goods)
+      console.log(data.goods)
 
       setDataProducts(data.goods)
       return data.goods

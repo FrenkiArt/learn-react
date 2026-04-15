@@ -1,4 +1,4 @@
-const dataAllProducts = [
+﻿const dataAllProducts = [
   {
     id: 1,
     category: "пицца",
@@ -9,6 +9,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 6,
@@ -42,6 +45,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 7,
@@ -49,9 +53,11 @@ const dataAllProducts = [
     title: "Пепперони",
     descr: 'сыр  "Моцарелла", томатный соус, томаты ,пепперони, сыр "Пармезан"',
     price: 750,
-    weight: "",
-    image_url: "",
+    weight: "550 гр",
+    image_url: "/images/picca-pepperoni-1.png",
     show: 1,
+    images:
+      "/images/picca-pepperoni-1.png, /images/picca-pepperoni-2.png, /images/picca-pepperoni-3.png",
   },
   {
     id: 8,
@@ -62,6 +68,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 9,
@@ -73,6 +80,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 10,
@@ -84,6 +92,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 11,
@@ -95,6 +104,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 12,
@@ -106,6 +116,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 13,
@@ -117,6 +128,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: "",
@@ -128,6 +140,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 15,
@@ -138,6 +151,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 16,
@@ -148,6 +162,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 17,
@@ -158,6 +173,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 18,
@@ -169,6 +185,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 19,
@@ -180,6 +197,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 20,
@@ -190,6 +208,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 21,
@@ -201,6 +220,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 22,
@@ -212,6 +232,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 23,
@@ -223,6 +244,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 24,
@@ -233,6 +255,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 25,
@@ -243,6 +266,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 26,
@@ -254,6 +278,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 27,
@@ -265,6 +290,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 28,
@@ -276,6 +302,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 30,
@@ -287,6 +314,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 31,
@@ -298,6 +326,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 32,
@@ -309,6 +338,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 33,
@@ -320,6 +350,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 34,
@@ -331,6 +362,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 35,
@@ -341,6 +373,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 36,
@@ -352,6 +385,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 37,
@@ -363,6 +397,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 39,
@@ -374,6 +409,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 40,
@@ -385,6 +421,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 41,
@@ -396,6 +433,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 42,
@@ -407,6 +445,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 43,
@@ -418,6 +457,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 44,
@@ -428,6 +468,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 45,
@@ -438,6 +479,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 46,
@@ -448,6 +490,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 47,
@@ -458,6 +501,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 48,
@@ -468,6 +512,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 49,
@@ -479,6 +524,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 50,
@@ -490,6 +536,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 51,
@@ -501,6 +548,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 52,
@@ -511,6 +559,7 @@ const dataAllProducts = [
     weight: "120 гр",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 53,
@@ -521,6 +570,7 @@ const dataAllProducts = [
     weight: "120 гр",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 54,
@@ -531,6 +581,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 55,
@@ -541,6 +592,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 56,
@@ -551,6 +603,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 57,
@@ -561,6 +614,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 58,
@@ -572,6 +626,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 59,
@@ -582,6 +637,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 60,
@@ -593,6 +649,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -603,6 +660,7 @@ const dataAllProducts = [
     weight: "600 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -613,6 +671,7 @@ const dataAllProducts = [
     weight: "1500 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -623,6 +682,7 @@ const dataAllProducts = [
     weight: "600 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -633,6 +693,7 @@ const dataAllProducts = [
     weight: "1500 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -644,6 +705,7 @@ const dataAllProducts = [
     weight: "600 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -655,6 +717,7 @@ const dataAllProducts = [
     weight: "1500 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -666,6 +729,7 @@ const dataAllProducts = [
     weight: "600 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -677,6 +741,7 @@ const dataAllProducts = [
     weight: "1500 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -688,6 +753,7 @@ const dataAllProducts = [
     weight: "600 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -699,6 +765,7 @@ const dataAllProducts = [
     weight: "1500 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -709,6 +776,7 @@ const dataAllProducts = [
     weight: "600 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -719,6 +787,7 @@ const dataAllProducts = [
     weight: "1500 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -730,6 +799,7 @@ const dataAllProducts = [
     weight: "600 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -741,6 +811,7 @@ const dataAllProducts = [
     weight: "1500 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -752,6 +823,7 @@ const dataAllProducts = [
     weight: "600 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -763,6 +835,7 @@ const dataAllProducts = [
     weight: "1500 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -773,6 +846,7 @@ const dataAllProducts = [
     weight: "600 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -783,6 +857,7 @@ const dataAllProducts = [
     weight: "1500 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -793,6 +868,7 @@ const dataAllProducts = [
     weight: "600 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 65,
@@ -803,6 +879,7 @@ const dataAllProducts = [
     weight: "1500 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: "",
@@ -813,6 +890,7 @@ const dataAllProducts = [
     weight: "600 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: "",
@@ -823,6 +901,7 @@ const dataAllProducts = [
     weight: "1500 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: "",
@@ -833,6 +912,7 @@ const dataAllProducts = [
     weight: "600 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: "",
@@ -843,6 +923,7 @@ const dataAllProducts = [
     weight: "1500 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 66,
@@ -853,6 +934,7 @@ const dataAllProducts = [
     weight: "250 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 67,
@@ -863,6 +945,7 @@ const dataAllProducts = [
     weight: "250 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 68,
@@ -874,6 +957,7 @@ const dataAllProducts = [
     weight: "30 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 69,
@@ -884,6 +968,7 @@ const dataAllProducts = [
     weight: "150 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 70,
@@ -894,6 +979,7 @@ const dataAllProducts = [
     weight: "200 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 71,
@@ -904,6 +990,7 @@ const dataAllProducts = [
     weight: "200 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 73,
@@ -914,6 +1001,7 @@ const dataAllProducts = [
     weight: "200 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 74,
@@ -924,6 +1012,7 @@ const dataAllProducts = [
     weight: "200 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 75,
@@ -934,6 +1023,7 @@ const dataAllProducts = [
     weight: "200 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 76,
@@ -944,6 +1034,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: "",
@@ -955,6 +1046,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 77,
@@ -965,6 +1057,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 78,
@@ -976,6 +1069,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 79,
@@ -987,6 +1081,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 80,
@@ -997,6 +1092,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 81,
@@ -1007,6 +1103,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 82,
@@ -1017,6 +1114,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 83,
@@ -1027,6 +1125,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 84,
@@ -1037,6 +1136,7 @@ const dataAllProducts = [
     weight: "200 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 85,
@@ -1047,6 +1147,7 @@ const dataAllProducts = [
     weight: "200 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 86,
@@ -1057,6 +1158,7 @@ const dataAllProducts = [
     weight: "200 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 87,
@@ -1067,6 +1169,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 88,
@@ -1077,6 +1180,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 89,
@@ -1087,6 +1191,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 90,
@@ -1097,6 +1202,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 91,
@@ -1107,6 +1213,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 92,
@@ -1117,6 +1224,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 93,
@@ -1127,6 +1235,7 @@ const dataAllProducts = [
     weight: "400 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 94,
@@ -1137,6 +1246,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 95,
@@ -1147,6 +1257,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 96,
@@ -1157,6 +1268,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 97,
@@ -1168,6 +1280,7 @@ const dataAllProducts = [
     weight: "300 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 98,
@@ -1178,6 +1291,7 @@ const dataAllProducts = [
     weight: "0,5 л",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 99,
@@ -1188,6 +1302,7 @@ const dataAllProducts = [
     weight: "1 л",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 100,
@@ -1198,6 +1313,7 @@ const dataAllProducts = [
     weight: "1,5 л",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 101,
@@ -1208,6 +1324,7 @@ const dataAllProducts = [
     weight: "1 л",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 102,
@@ -1218,6 +1335,7 @@ const dataAllProducts = [
     weight: "500 мл",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 103,
@@ -1228,6 +1346,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 104,
@@ -1238,6 +1357,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 105,
@@ -1248,6 +1368,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 107,
@@ -1258,6 +1379,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 108,
@@ -1269,6 +1391,7 @@ const dataAllProducts = [
     weight: "26 кусочков",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 109,
@@ -1280,6 +1403,7 @@ const dataAllProducts = [
     weight: "52 кусочка",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 110,
@@ -1291,6 +1415,7 @@ const dataAllProducts = [
     weight: "80 кусочков",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 111,
@@ -1302,6 +1427,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 112,
@@ -1313,6 +1439,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
   {
     id: 113,
@@ -1324,6 +1451,7 @@ const dataAllProducts = [
     weight: "",
     image_url: "",
     show: 1,
+    images: "",
   },
 ]
 
