@@ -28,7 +28,7 @@ const IndexPage = ({ props }) => {
 
   async function getJson() {
     const url =
-      "https://script.google.com/macros/s/AKfycbyhLls5eEGpsZx29Q3rE7V7jjtgSV01ZiwfFgR5_yecDnle6A9Cz5wrsNLQNJhH1XxApA/exec"
+      "https://script.google.com/macros/s/AKfycbyGHLMEDIRTU8-71Fg0_QVvxY-eYtX4QGRuIXwtfi9x09TDUqD_jflUyp_9IaZVdsb4zQ/exec"
 
     try {
       const response = await fetch(url)
@@ -687,7 +687,7 @@ const IndexPage = ({ props }) => {
 
                   {shiping === "Доставка такси" ? (
                     <p className="text-muted p-0 small-text ">
-                      Такси оплачивается по тарифу
+                      Такси оплачивается по тарифу.
                     </p>
                   ) : (
                     ""
@@ -703,7 +703,9 @@ const IndexPage = ({ props }) => {
 
                   <div>
                     <small className="lh-sm">
-                      Для подтверждения заказа Вам перезвонят
+                      Возможность доставки уточняйте по телефону.
+                      <br />
+                      Для подтверждения заказа Вам перезвонят.
                     </small>
                   </div>
                 </form>

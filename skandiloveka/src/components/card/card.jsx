@@ -2,12 +2,14 @@ import * as React from "react"
 import "./card.scss"
 
 const Card = ({ dto, addToCart }) => {
-  let images = dto?.images
-    ? dto.images
-        .split(/[,;]+/)
-        .map(s => s.trim())
-        .filter(Boolean)
-    : []
+  let images = []
+
+  if (dto?.images && typeof dto.images === "string" && dto.images.trim()) {
+    images = dto.images
+      .split(/[,;]+/)
+      .map(s => s.trim())
+      .filter(Boolean)
+  }
 
   if (images.length === 0 && dto?.image_url) {
     images = [dto.image_url]
@@ -17,7 +19,7 @@ const Card = ({ dto, addToCart }) => {
   }
 
   return (
-    <div className="card shadow-sm">
+    <div className="card">
       <div className="card-gallery">
         {images.map((img, i) => (
           <img

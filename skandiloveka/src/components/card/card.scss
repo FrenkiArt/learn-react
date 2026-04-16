@@ -1,4 +1,5 @@
 .card {
+  --bs-card-spacer-x: 0;
   height: 100%;
   border: none;
 
@@ -6,6 +7,7 @@
     position: relative;
     overflow: hidden;
     aspect-ratio: 1 / 1;
+    border-radius: 4px;
 
     img {
       position: absolute;
@@ -16,6 +18,7 @@
       object-fit: cover;
       opacity: 0;
       transition: opacity 0.3s ease;
+      border-radius: inherit;
     }
 
     img:first-of-type {
@@ -39,23 +42,21 @@
 
     .gallery-dots {
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: 6px;
+      left: 6px;
       right: 0;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 6px;
       z-index: 3;
       pointer-events: none;
-      padding: 12px 0;
-      background: linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+      padding: 0px var(--bs-card-spacer-x);
 
       span {
-        width: 100%;
-        max-width: 60px;
-        height: 3px;
-        background: rgba(255, 255, 255, 0.4);
-        border-radius: 2px;
+        width: 6px;
+        height: 6px;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 4px;
         transition: background 0.2s ease;
       }
     }
@@ -68,7 +69,7 @@
       opacity: 0;
     }
     &:has(.gallery-zone:first-child:hover) .gallery-dots span:nth-child(1) {
-      background: #fff;
+      background: rgba(var(--bs-primary-rgb));
     }
 
     /* Зона 2 наведена */
@@ -80,7 +81,7 @@
       opacity: 0;
     }
     &:has(.gallery-zone:nth-child(2):hover) .gallery-dots span:nth-child(2) {
-      background: #fff;
+      background: rgba(var(--bs-primary-rgb));
     }
 
     /* Зона 3 наведена */
@@ -92,7 +93,7 @@
       opacity: 0;
     }
     &:has(.gallery-zone:nth-child(3):hover) .gallery-dots span:nth-child(3) {
-      background: #fff;
+      background: rgba(var(--bs-primary-rgb));
     }
 
     /* Зона 4 наведена */
@@ -104,7 +105,7 @@
       opacity: 0;
     }
     &:has(.gallery-zone:nth-child(4):hover) .gallery-dots span:nth-child(4) {
-      background: #fff;
+      background: rgba(var(--bs-primary-rgb));
     }
   }
 

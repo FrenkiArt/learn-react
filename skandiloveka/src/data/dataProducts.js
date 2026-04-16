@@ -4,143 +4,176 @@
     category: "пицца",
     title: "Чесночная",
     descr:
-      'сыр " Моцарелла", копченое куриное филе халяль, томаты, томатный соус, кунжут, чесночный соус',
-    price: 730,
-    weight: "",
-    image_url: "",
+      'сыр "моцарелла", пицца соус, томаты,\nкопченое куриное филе,сливочно-чесночный соус,кунжут ',
+    price: 760,
+    weight: "570 гр",
+    image_url: "/images/picca-chesnochnaia-1.png",
     show: 1,
-    images: "",
+    images:
+      "/images/picca-chesnochnaia-1.png, /images/picca-chesnochnaia-2.png, /images/picca-chesnochnaia-3.png",
+    halal: 1,
+    spicy: "",
   },
   {
     id: 2,
     category: "пицца",
     title: "Цезарь",
     descr:
-      'сыр "Моцарелла", куриное филе халяль, листья салата ,оригинальный соус" Цезарь", сыр" Пармезан", томатный соус',
-    price: 770,
-    weight: "",
-    image_url: "",
+      'cыр "моцарелла", фирменный пицца соус, копченое куриное филе, листья салата, оригинальный соус «Цезарь», помидорки черри, сыр пармезан',
+    price: 820,
+    weight: "630 гр",
+    image_url: "/images/picca-cezar-1.png",
     show: 1,
-    images: "",
+    images:
+      "/images/picca-cezar-1.png, /images/picca-cezar-2.png, /images/picca-cezar-3.png",
+    halal: 1,
+    spicy: "",
   },
   {
     id: 3,
     category: "пицца",
-    title: "Ди-Поло",
+    title: "Грибная",
     descr:
-      'сыр "Моцарелла", куриное филе халяль, шампиньоны , тушеные в сливках, томаты, маслины, томатный соус',
-    price: 820,
-    weight: "",
-    image_url: "",
+      'сыр "моцарелла", пицца соус, томаты, копченое куриное филе, шампиньоны в нежном сливочном соусе, маслины',
+    price: 890,
+    weight: "685 гр",
+    image_url: "/images/picca-gribnaia-1.png",
     show: 1,
-    images: "",
+    images:
+      "/images/picca-gribnaia-1.png, /images/picca-gribnaia-2.png, /images/picca-gribnaia-3.png",
+    halal: 1,
+    spicy: "",
   },
   {
     id: 6,
     category: "пицца",
     title: "Скандинава",
     descr:
-      'сыр "Моцарелла", норвежский лосось, листья салата, тигровые креветки, помидорки черри, творожный сыр',
-    price: 890,
-    weight: "",
-    image_url: "",
+      'сыр "моцарелла" 150 гр, пицца соус, нежное филе лосося, тигровые креветки, листья салата, помидорки черри, творожный сыр, соус Унаги',
+    price: 920,
+    weight: "610 гр",
+    image_url: "/images/picca-scandinava-1.png",
     show: 1,
-    images: "",
+    images:
+      "/images/picca-scandinava-1.png, /images/picca-scandinava-2.png, /images/picca-scandinava-3.png",
+    halal: 1,
+    spicy: "",
   },
   {
     id: 7,
     category: "пицца",
     title: "Пепперони",
-    descr: 'сыр  "Моцарелла", томатный соус, томаты ,пепперони, сыр "Пармезан"',
-    price: 750,
-    weight: "550 гр",
+    descr: 'сыр  "моцарелла", томатный соус, томаты ,пепперони, сыр "Пармезан"',
+    price: 780,
+    weight: "555 гр",
     image_url: "/images/picca-pepperoni-1.png",
     show: 1,
     images:
       "/images/picca-pepperoni-1.png, /images/picca-pepperoni-2.png, /images/picca-pepperoni-3.png",
+    halal: 1,
+    spicy: "",
   },
   {
     id: 8,
     category: "пицца",
     title: "Маргарита",
-    descr: 'сыр  "Моцарелла", томатный соус, томаты ,оливковое масло',
-    price: 700,
-    weight: "",
-    image_url: "",
+    descr: 'сыр "моцарелла", томаты, оливковое масло, итальянские травы',
+    price: 720,
+    weight: "565 гр",
+    image_url: "/images/picca-margarita-1.png",
     show: 1,
-    images: "",
+    images:
+      "/images/picca-margarita-1.png, /images/picca-margarita-2.png, /images/picca-margarita-3.png",
+    halal: 1,
+    spicy: "",
   },
   {
     id: 9,
     category: "пицца",
     title: "Гавайская",
     descr:
-      'сыр  "Моцарелла", фирменный соус " Цезарь", копченое куриное филе , ананасы',
-    price: 750,
-    weight: "",
-    image_url: "",
+      'сыр "моцарелла", фирменный пицца соус, копченое куриное филе, ананасы, сливочно-чесночный соус',
+    price: 780,
+    weight: "615 гр",
+    image_url: "/images/picca-gavai-1.png",
     show: 1,
-    images: "",
+    images:
+      "/images/picca-gavai-1.png, /images/picca-gavai-2.png, /images/picca-gavai-3.png, /images/picca-gavai-4.png",
+    halal: 1,
+    spicy: "",
   },
   {
     id: 10,
     category: "пицца",
     title: "Мясная",
     descr:
-      'сыр  "Моцарелла", томатный  соус , томаты, копченое куриное филе, пепперони, охотничьи колбаски',
-    price: 950,
-    weight: "",
-    image_url: "",
+      'сыр "моцарелла", пицца соус с базиликом, томаты, пепперони, охотничьи колбаски, копчёное куриное филе ',
+    price: 980,
+    weight: "600 гр",
+    image_url: "/images/picca-miasnaia-1.png",
     show: 1,
-    images: "",
+    images: "/images/picca-miasnaia-1.png, /images/picca-miasnaia-2.png",
+    halal: 0,
+    spicy: "",
   },
   {
     id: 11,
     category: "пицца",
     title: "Деревенская",
     descr:
-      'сыр "Моцарелла", пицца соус с базиликом, томаты, копченое куриное филе, корнишоны, майонез',
-    price: 730,
-    weight: "",
-    image_url: "",
+      'сыр "моцарелла", пицца соус с базиликом, томаты, копченое куриное филе, корнишоны, соус провансаль ',
+    price: 760,
+    weight: "630 гр",
+    image_url: "/images/picca-derevnia-1.png",
     show: 1,
-    images: "",
+    images:
+      "/images/picca-derevnia-1.png, /images/picca-derevnia-2.png, /images/picca-derevnia-3.png",
+    halal: 1,
+    spicy: "",
   },
   {
     id: 12,
     category: "пицца",
     title: "Барбекю",
     descr:
-      'сыр "Моцарелла", пицца соус с базиликом, томаты, пепперони, охотничьи колбаски, халапенью, соус барбекю',
-    price: 780,
-    weight: "",
-    image_url: "",
+      'сыр "моцарелла", пицца соус с базиликом, томаты, пепперони, охотничьи колбаски, халапенью, соус барбекю ',
+    price: 810,
+    weight: "580 гр",
+    image_url: "/images/picca-barbeku-1.png",
     show: 1,
-    images: "",
+    images:
+      "/images/picca-barbeku-1.png, /images/picca-barbeku-2.png, /images/picca-barbeku-3.png",
+    halal: 0,
+    spicy: 1,
   },
   {
     id: 13,
     category: "пицца",
     title: "Четыре сыра",
-    descr:
-      'Фрименный белый соус, сыр "Моцарелла", сыр Хохланд, творожный сыр, пармезан',
-    price: 740,
-    weight: "",
-    image_url: "",
+    descr: 'сыр "моцарелла", сыр "Хохланд", творожный сыр, сыр пармезан',
+    price: 770,
+    weight: "505 гр",
+    image_url: "/images/picca-4cheese-1.png",
     show: 1,
-    images: "",
+    images:
+      "/images/picca-4cheese-1.png, /images/picca-4cheese-2.png, /images/picca-4cheese-3.png",
+    halal: 1,
+    spicy: "",
   },
   {
     id: "",
     category: "пицца",
-    title: "Том-Ям",
+    title: "Мексиканская",
     descr:
-      'сыр "Моцарелла", пицца соус, паста том-ям, шампиньоны, мидии, тигровые креветки, фирменная заправка',
-    price: 880,
-    weight: "",
-    image_url: "",
+      'cыр "моцарелла", пицца соус, томаты, пепперони, болгарский перец, охотничьи колбаски, соус Спайси , халапеньо',
+    price: 810,
+    weight: "565 гр",
+    image_url: "/images/picca-mexic-1.png",
     show: 1,
-    images: "",
+    images:
+      "/images/picca-mexic-1.png, /images/picca-mexic-2.png, /images/picca-mexic-3.png",
+    halal: 0,
+    spicy: 1,
   },
   {
     id: 15,
@@ -152,6 +185,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 16,
@@ -163,6 +198,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 17,
@@ -174,6 +211,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 18,
@@ -186,6 +225,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 19,
@@ -198,6 +239,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 20,
@@ -209,6 +252,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 21,
@@ -221,6 +266,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 22,
@@ -233,6 +280,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 23,
@@ -245,6 +294,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 24,
@@ -256,6 +307,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 25,
@@ -267,6 +320,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 26,
@@ -279,6 +334,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 27,
@@ -291,6 +348,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 28,
@@ -303,6 +362,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 30,
@@ -315,6 +376,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 31,
@@ -327,6 +390,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 32,
@@ -339,6 +404,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 33,
@@ -351,6 +418,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 34,
@@ -363,6 +432,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 35,
@@ -374,6 +445,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 36,
@@ -386,6 +459,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 37,
@@ -398,6 +473,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 39,
@@ -410,6 +487,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 40,
@@ -422,6 +501,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 41,
@@ -434,6 +515,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 42,
@@ -446,6 +529,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 43,
@@ -458,6 +543,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 44,
@@ -469,6 +556,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 45,
@@ -480,6 +569,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 46,
@@ -491,6 +582,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 47,
@@ -502,6 +595,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 48,
@@ -513,6 +608,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 49,
@@ -525,6 +622,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 50,
@@ -537,6 +636,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 51,
@@ -549,6 +650,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 52,
@@ -560,6 +663,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 53,
@@ -571,6 +676,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 54,
@@ -582,6 +689,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 55,
@@ -593,6 +702,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 56,
@@ -604,6 +715,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 57,
@@ -615,6 +728,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 58,
@@ -627,6 +742,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 59,
@@ -638,6 +755,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 60,
@@ -650,6 +769,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -661,6 +782,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -672,6 +795,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -683,6 +808,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -694,6 +821,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -706,6 +835,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -718,6 +849,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -730,6 +863,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -742,6 +877,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -754,6 +891,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -766,6 +905,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -777,6 +918,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -788,6 +931,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -800,6 +945,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -812,6 +959,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -824,6 +973,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -836,6 +987,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -847,6 +1000,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -858,6 +1013,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -869,6 +1026,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 65,
@@ -880,6 +1039,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: "",
@@ -891,6 +1052,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: "",
@@ -902,6 +1065,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: "",
@@ -913,6 +1078,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: "",
@@ -924,6 +1091,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 66,
@@ -935,6 +1104,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 67,
@@ -946,6 +1117,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 68,
@@ -958,6 +1131,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 69,
@@ -969,6 +1144,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 70,
@@ -980,6 +1157,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 71,
@@ -991,6 +1170,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 73,
@@ -1002,6 +1183,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 74,
@@ -1013,6 +1196,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 75,
@@ -1024,6 +1209,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 76,
@@ -1035,6 +1222,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: "",
@@ -1047,6 +1236,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 77,
@@ -1058,6 +1249,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 78,
@@ -1070,6 +1263,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 79,
@@ -1082,6 +1277,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 80,
@@ -1093,6 +1290,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 81,
@@ -1104,6 +1303,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 82,
@@ -1115,6 +1316,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 83,
@@ -1126,6 +1329,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 84,
@@ -1137,6 +1342,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 85,
@@ -1148,6 +1355,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 86,
@@ -1159,6 +1368,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 87,
@@ -1170,6 +1381,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 88,
@@ -1181,6 +1394,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 89,
@@ -1192,6 +1407,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 90,
@@ -1203,6 +1420,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 91,
@@ -1214,6 +1433,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 92,
@@ -1225,6 +1446,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 93,
@@ -1236,6 +1459,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 94,
@@ -1247,6 +1472,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 95,
@@ -1258,6 +1485,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 96,
@@ -1269,6 +1498,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 97,
@@ -1281,6 +1512,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 98,
@@ -1292,6 +1525,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 99,
@@ -1303,6 +1538,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 100,
@@ -1314,6 +1551,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 101,
@@ -1325,6 +1564,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 102,
@@ -1336,6 +1577,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 103,
@@ -1347,6 +1590,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 104,
@@ -1358,6 +1603,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 105,
@@ -1369,6 +1616,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 107,
@@ -1380,6 +1629,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 108,
@@ -1392,6 +1643,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 109,
@@ -1404,6 +1657,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 110,
@@ -1416,6 +1671,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 111,
@@ -1428,6 +1685,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 112,
@@ -1440,6 +1699,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
   {
     id: 113,
@@ -1452,6 +1713,8 @@
     image_url: "",
     show: 1,
     images: "",
+    halal: "",
+    spicy: "",
   },
 ]
 
