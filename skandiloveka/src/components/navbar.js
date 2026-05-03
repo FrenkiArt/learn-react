@@ -15,9 +15,10 @@ const ExactNavLink = props => <Link getProps={isActive} {...props} />
 const Navbar = ({ siteTitle, korzina = [] }) => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
-      <div className="container-fluid">
+      <div className="container">
         <Link to="/" className="navbar-brand">
-          {siteTitle}
+          {/* {siteTitle} */}
+          <span class="d-none d-sm-inline">SkandiLoveKa ·</span> Скандилавка
         </Link>
 
         <Link to="/#korzina" className="link-to-cart">

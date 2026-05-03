@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col col-md-3">
-              <div className="footer__copyright">© 2024</div>
+              <div className="footer__copyright">© 2026</div>
             </div>
             <div className="col col-md-4 offset-md-5">
               <div className="footer__socials">

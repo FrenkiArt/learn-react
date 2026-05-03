@@ -356,7 +356,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <a href="deserts" className="btn btn-success box-btn-name mb-4">
+              <a href="#deserts" className="btn btn-success box-btn-name mb-4">
                 <h2 id="deserts" className="fw-light link-target-with-offset">
                   Десерты
                 </h2>
@@ -374,7 +374,7 @@ const IndexPage = ({ props }) => {
                 })}
               </div>
 
-              <a href="cofe" className="btn btn-success box-btn-name mb-4">
+              <a href="#cofe" className="btn btn-success box-btn-name mb-4">
                 <h2 id="cofe" className="fw-light link-target-with-offset">
                   Горячие напитки
                 </h2>
@@ -384,6 +384,15 @@ const IndexPage = ({ props }) => {
                 {dataProducts.map(card => {
                   return card.category === "горячие-напитки" &&
                     card.show != 0 ? (
+                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
+                {dataProducts.map(card => {
+                  return card.category === "чай" && card.show != 0 ? (
                     <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
@@ -520,11 +529,6 @@ const IndexPage = ({ props }) => {
                     ""
                   )
                 })}
-
-                <div className="col-12">
-                  ! По Вашему желанию к комбо набору можно приобрести сувенирную
-                  игрушку ❤️
-                </div>
               </div>
             </div>
 

@@ -46,20 +46,54 @@ const Card = ({ dto, addToCart }) => {
             ))}
           </div>
         )}
+
+        {(dto.halal || dto.spicy) && (
+          <div className="card-bar">
+            {dto.halal && (
+              <span className="badge rounded-pill text-bg-success">Halal</span>
+            )}
+            {/* {dto.spicy && (
+              <span className="badge rounded-pill text-bg-light">🌶️</span>
+            )} */}
+          </div>
+        )}
       </div>
 
       <div className="card-body">
-        <h4 className="card-title fw-bold">
-          {dto.title ||
-            dto?.defaultProductVariant?.title ||
-            "Текст по умолчанию"}
-        </h4>
+        <div className="hstack mb-2">
+          <h4 className="card-title   mb-0">
+            {dto.title ||
+              dto?.defaultProductVariant?.title ||
+              "Текст по умолчанию"}
+          </h4>
+          {dto.spicy && <span>&nbsp;🌶️</span>}
+        </div>
 
-        <p className="card-price fw-bold">
-          <span>Цена: {dto.price || dto?.defaultProductVariant?.price} ₽</span>
-          {dto.weight ? <span> / {dto.weight} </span> : ""}
+        <p className="card-price">
+          <span className="fw-bold">
+            {dto.price || dto?.defaultProductVariant?.price} ₽
+          </span>
+
+          {dto.weight ? (
+            <span>
+              <span> · </span>
+              <span> {dto.weight} </span>
+            </span>
+          ) : (
+            ""
+          )}
+
+          {dto.category === "пицца" ? (
+            <span>
+              <span> · </span>
+              <span> 30 см </span>
+            </span>
+          ) : (
+            ""
+          )}
         </p>
-        <p className="card-text">
+
+        <p className="card-text" style={{ whiteSpace: "pre-line" }}>
           {dto.descr || dto?.defaultProductVariant?.composition}
         </p>
         <button className="btn btn-primary" onClick={() => addToCart(dto.id)}>

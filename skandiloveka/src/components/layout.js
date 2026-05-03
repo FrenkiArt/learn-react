@@ -19,7 +19,7 @@ const Layout = ({ children, korzina }) => {
 
   return (
     <div className="container-fluid p-0">
-      <Navbar siteTitle={`SkandiLoveKa`} korzina={korzina} />
+      <Navbar siteTitle={`SkandiLoveKa · Скандилавка`} korzina={korzina} />
       <main id="main" className="main">
         {children}
       </main>

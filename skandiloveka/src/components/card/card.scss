@@ -115,8 +115,18 @@
     padding-top: 6px;
   }
 
+  .card-bar {
+    align-items: flex-end;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2px;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+  }
+
   .card-title {
-    line-height: 1.2;
+    line-height: 1.1;
   }
 
   .card-price {

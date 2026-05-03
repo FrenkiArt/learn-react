@@ -123,7 +123,7 @@ html {
   gap: 2px 10px;
   padding: 5px 0.5rem;
   background-color: #ffffff;
-  z-index: 3;
+  z-index: 4;
   font-size: 1rem;
   flex-direction: row;
   transform: translate(0, -100%);
@@ -138,11 +138,27 @@ html {
   a {
     color: #000000;
     display: inline-block;
+    text-decoration-color: rgba(0, 0, 0, 0.5);
 
     &:hover {
       text-decoration: none;
     }
   }
+}
+
+[class^="link-"],
+[class*=" link-"] {
+  --bs-link-underline-opacity: 0.33;
+
+  &:hover,
+  &:focus-visible {
+    --bs-link-underline-opacity: 1;
+  }
+}
+
+a {
+  text-underline-offset: 0.25em;
+  text-decoration-thickness: from-font;
 }
 
 .fast-links-toggler {
