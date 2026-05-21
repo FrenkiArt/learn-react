@@ -34,7 +34,6 @@ html {
   position: sticky;
   top: 70px;
   // max-height: calc(100vh - 100px - 40px);
-  overflow: auto;
 
   .badge {
     --bs-badge-padding-x: 0.5em;
@@ -159,6 +158,11 @@ html {
 a {
   text-underline-offset: 0.25em;
   text-decoration-thickness: from-font;
+}
+
+.btn {
+  padding-top: 4px;
+  padding-bottom: 8px;
 }
 
 .fast-links-toggler {

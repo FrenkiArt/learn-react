@@ -182,6 +182,27 @@ const IndexPage = ({ props }) => {
                 </button>
               </div>
 
+              <div className="mb-3 promo-block">
+                <div class="p-lg-3 promo-block__content">
+                  <div className="display-2 text-success mb-2 promo-block__title">
+                    Н О В И Н К А !
+                  </div>
+                  <div className="fs-3 lh-1 promo-block__text">
+                    <p>
+                      Мороженое и кола со вкусом дыни — яркое летнее сочетание!
+                    </p>
+                  </div>
+                </div>
+                <div className="promo-block__wrap-img">
+                  <img
+                    src="images/promo-img-2.png"
+                    loading="lazy"
+                    alt="Промо"
+                    className="promo-block__img"
+                  />
+                </div>
+              </div>
+
               <a href="#picca" className="btn btn-success box-btn-name mb-4">
                 <h2 id="picca" className="fw-light  link-target-with-offset">
                   Пицца
@@ -191,7 +212,7 @@ const IndexPage = ({ props }) => {
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
                   return card.category === "пицца" && card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -216,7 +237,7 @@ const IndexPage = ({ props }) => {
                 {dataProducts.map(card => {
                   return card.category === "горячие-шеф-роллы" &&
                     card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -241,7 +262,7 @@ const IndexPage = ({ props }) => {
                 {dataProducts.map(card => {
                   return card.category === "холодные-роллы" &&
                     card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -266,7 +287,7 @@ const IndexPage = ({ props }) => {
                 {dataProducts.map(card => {
                   return card.category === "запеченные-роллы" &&
                     card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -287,7 +308,7 @@ const IndexPage = ({ props }) => {
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
                   return card.category === "горячие-роллы" && card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -311,7 +332,7 @@ const IndexPage = ({ props }) => {
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
                   return card.category === "мини-роллы" && card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -329,7 +350,7 @@ const IndexPage = ({ props }) => {
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
                   return card.category === "салаты" && card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -347,7 +368,7 @@ const IndexPage = ({ props }) => {
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
                   return card.category === "фастфуд" && card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -365,7 +386,7 @@ const IndexPage = ({ props }) => {
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
                   return card.category === "десерты" && card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -384,7 +405,7 @@ const IndexPage = ({ props }) => {
                 {dataProducts.map(card => {
                   return card.category === "горячие-напитки" &&
                     card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -393,7 +414,7 @@ const IndexPage = ({ props }) => {
                 })}
                 {dataProducts.map(card => {
                   return card.category === "чай" && card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -418,7 +439,7 @@ const IndexPage = ({ props }) => {
                 {dataProducts.map(card => {
                   return card.category === "коктейли-молочные" &&
                     card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -436,7 +457,7 @@ const IndexPage = ({ props }) => {
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
                   return card.category === "смузи" && card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -461,7 +482,7 @@ const IndexPage = ({ props }) => {
                 {dataProducts.map(card => {
                   return card.category === "фирменные-напитки" &&
                     card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -486,7 +507,7 @@ const IndexPage = ({ props }) => {
                 {dataProducts.map(card => {
                   return card.category === "холодные-напитки" &&
                     card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -504,7 +525,7 @@ const IndexPage = ({ props }) => {
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
                   return card.category === "сеты" && card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -522,7 +543,7 @@ const IndexPage = ({ props }) => {
               <div className="row goods mb-5">
                 {dataProducts.map(card => {
                   return card.category === "комбо-набор" && card.show != 0 ? (
-                    <div className="col-12 col-sm-6 col-lg-4" key={card.id}>
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
                       <Card dto={card} addToCart={addToCart} />
                     </div>
                   ) : (
@@ -552,12 +573,12 @@ const IndexPage = ({ props }) => {
                   {korzina.map(item => {
                     return (
                       <li
-                        className="list-group-item korzina__item"
+                        className="list-group-item korzina__item pe-2 lh-1"
                         key={item.id}
                       >
-                        {item.title} х{item.count}шт.
+                        {item.title} × {item.count} шт.
                         <span className="korzina__price">
-                          {item.price * item.count} ₽
+                          {item.price * item.count} ₽
                         </span>
                         <button
                           className="btn-close korzina__remove-btn  "
@@ -573,7 +594,7 @@ const IndexPage = ({ props }) => {
                   {korzina.length > 0 ? (
                     <li className="list-group-item fw-bold korzina__item">
                       Итого
-                      <span className="korzina__price">{amount} ₽</span>
+                      <span className="korzina__price">{amount} ₽</span>
                     </li>
                   ) : (
                     <li className="list-group-item fw-bold korzina__item">
@@ -705,12 +726,11 @@ const IndexPage = ({ props }) => {
                     ""
                   )}
 
-                  <div>
-                    <small className="lh-sm">
+                  <div className="lh-1 mt-3">
+                    <small className="d-block mb-1">
                       Возможность доставки уточняйте по телефону.
-                      <br />
-                      Для подтверждения заказа Вам перезвонят.
                     </small>
+                    <small>Для подтверждения заказа Вам перезвонят.</small>
                   </div>
                 </form>
 

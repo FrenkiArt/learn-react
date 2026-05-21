@@ -57,6 +57,13 @@ const Card = ({ dto, addToCart }) => {
             )} */}
           </div>
         )}
+
+        <button
+          className="btn btn-primary btn-short"
+          onClick={() => addToCart(dto.id)}
+        >
+          <span>+</span>
+        </button>
       </div>
 
       <div className="card-body">
