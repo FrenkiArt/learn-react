@@ -556,7 +556,7 @@ const IndexPage = ({ props }) => {
             <div className="col-md-4 col-lg-3 ">
               <div id="korzina" className="aside-sticky">
                 <h2 className="fw-light mb-4 position-relative">
-                  Корзина
+                  Корзина ·· 
                   <span className="position-relative">
                     {countElsKorzina(korzina) > 0 ? (
                       <span className="position-absolute top-0 start-100   badge rounded-pill bg-danger">
