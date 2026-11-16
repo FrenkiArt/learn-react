@@ -155,6 +155,7 @@ const IndexPage = ({ props }) => {
           <div className="row row-first">
             <div className="col-md-8 col-lg-9">
               <div className="list-group fast-links mb-4">
+                <a href="#sushi-burger">Суши бургеры</a>
                 <a href="#picca">Пицца</a>
                 <a href="#fried-rolls">Горячие Шеф роллы</a>
                 <a href="#cold-rolls">Роллы-холодные</a>
@@ -182,7 +183,7 @@ const IndexPage = ({ props }) => {
                 </button>
               </div>
 
-              <div className="mb-3 promo-block">
+              <div className="mb-3 promo-block d-none">
                 <div class="p-lg-3 promo-block__content">
                   <div className="display-2 text-success mb-2 promo-block__title">
                     Н О В И Н К А !
@@ -201,6 +202,30 @@ const IndexPage = ({ props }) => {
                     className="promo-block__img"
                   />
                 </div>
+              </div>
+
+              <a
+                href="#sushi-burger"
+                className="btn btn-success box-btn-name mb-4"
+              >
+                <h2
+                  id="sushi-burger"
+                  className="fw-light link-target-with-offset"
+                >
+                  Cуши бургеры
+                </h2>
+              </a>
+
+              <div className="row goods mb-5">
+                {dataProducts.map(card => {
+                  return card.category === "суши бургеры" && card.show != 0 ? (
+                    <div className="col-12 col-sm-6 col-lg-3" key={card.id}>
+                      <Card dto={card} addToCart={addToCart} />
+                    </div>
+                  ) : (
+                    ""
+                  )
+                })}
               </div>
 
               <a href="#picca" className="btn btn-success box-btn-name mb-4">
@@ -556,7 +581,7 @@ const IndexPage = ({ props }) => {
             <div className="col-md-4 col-lg-3 ">
               <div id="korzina" className="aside-sticky">
                 <h2 className="fw-light mb-4 position-relative">
-                  Корзина ·· 
+                  Корзина ··· 
                   <span className="position-relative">
                     {countElsKorzina(korzina) > 0 ? (
                       <span className="position-absolute top-0 start-100   badge rounded-pill bg-danger">
